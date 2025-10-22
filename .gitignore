@@ -1,0 +1,18 @@
+# Ignore specific files
+log.txt
+temp.tmp
+
+# Ignore all files with a certain extension
+*.log
+*.tmp
+
+# Ignore a directory and its contents
+build/
+node_modules/
+.venv/
+
+# Ignore a directory's contents but not the directory itself
+my_folder/*
+
+# Exception to an ignored pattern (e.g., track a specific file within an ignored directory)
+!build/important_file.txt
