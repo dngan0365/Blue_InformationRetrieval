@@ -1,0 +1,1559 @@
+<html lang="vi" prefix="og: https://ogp.me/ns#"><head><meta charset="UTF-8"><script>if(navigator.userAgent.match(/MSIE|Internet Explorer/i)||navigator.userAgent.match(/Trident\/7\..*?rv:11/i)){var href=document.location.href;if(!href.match(/[?&]nowprocket/)){if(href.indexOf("?")==-1){if(href.indexOf("#")==-1){document.location.href=href+"?nowprocket=1"}else{document.location.href=href.replace("#","?nowprocket=1#")}}else{if(href.indexOf("#")==-1){document.location.href=href+"&nowprocket=1"}else{document.location.href=href.replace("#","&nowprocket=1#")}}}}</script><script>class RocketLazyLoadScripts{constructor(){this.triggerEvents=["keydown","mousedown","mousemove","touchmove","touchstart","touchend","wheel"],this.userEventHandler=this._triggerListener.bind(this),this.touchStartHandler=this._onTouchStart.bind(this),this.touchMoveHandler=this._onTouchMove.bind(this),this.touchEndHandler=this._onTouchEnd.bind(this),this.clickHandler=this._onClick.bind(this),this.interceptedClicks=[],window.addEventListener("pageshow",(e=>{this.persisted=e.persisted})),window.addEventListener("DOMContentLoaded",(()=>{this._preconnect3rdParties()})),this.delayedScripts={normal:[],async:[],defer:[]},this.allJQueries=[]}_addUserInteractionListener(e){document.hidden?e._triggerListener():(this.triggerEvents.forEach((t=>window.addEventListener(t,e.userEventHandler,{passive:!0}))),window.addEventListener("touchstart",e.touchStartHandler,{passive:!0}),window.addEventListener("mousedown",e.touchStartHandler),document.addEventListener("visibilitychange",e.userEventHandler))}_removeUserInteractionListener(){this.triggerEvents.forEach((e=>window.removeEventListener(e,this.userEventHandler,{passive:!0}))),document.removeEventListener("visibilitychange",this.userEventHandler)}_onTouchStart(e){"HTML"!==e.target.tagName&&(window.addEventListener("touchend",this.touchEndHandler),window.addEventListener("mouseup",this.touchEndHandler),window.addEventListener("touchmove",this.touchMoveHandler,{passive:!0}),window.addEventListener("mousemove",this.touchMoveHandler),e.target.addEventListener("click",this.clickHandler),this._renameDOMAttribute(e.target,"onclick","rocket-onclick"))}_onTouchMove(e){window.removeEventListener("touchend",this.touchEndHandler),window.removeEventListener("mouseup",this.touchEndHandler),window.removeEventListener("touchmove",this.touchMoveHandler,{passive:!0}),window.removeEventListener("mousemove",this.touchMoveHandler),e.target.removeEventListener("click",this.clickHandler),this._renameDOMAttribute(e.target,"rocket-onclick","onclick")}_onTouchEnd(e){window.removeEventListener("touchend",this.touchEndHandler),window.removeEventListener("mouseup",this.touchEndHandler),window.removeEventListener("touchmove",this.touchMoveHandler,{passive:!0}),window.removeEventListener("mousemove",this.touchMoveHandler)}_onClick(e){e.target.removeEventListener("click",this.clickHandler),this._renameDOMAttribute(e.target,"rocket-onclick","onclick"),this.interceptedClicks.push(e),e.preventDefault(),e.stopPropagation(),e.stopImmediatePropagation()}_replayClicks(){window.removeEventListener("touchstart",this.touchStartHandler,{passive:!0}),window.removeEventListener("mousedown",this.touchStartHandler),this.interceptedClicks.forEach((e=>{e.target.dispatchEvent(new MouseEvent("click",{view:e.view,bubbles:!0,cancelable:!0}))}))}_renameDOMAttribute(e,t,n){e.hasAttribute&&e.hasAttribute(t)&&(event.target.setAttribute(n,event.target.getAttribute(t)),event.target.removeAttribute(t))}_triggerListener(){this._removeUserInteractionListener(this),"loading"===document.readyState?document.addEventListener("DOMContentLoaded",this._loadEverythingNow.bind(this)):this._loadEverythingNow()}_preconnect3rdParties(){let e=[];document.querySelectorAll("script[type=rocketlazyloadscript]").forEach((t=>{if(t.hasAttribute("src")){const n=new URL(t.src).origin;n!==location.origin&&e.push({src:n,crossOrigin:t.crossOrigin||"module"===t.getAttribute("data-rocket-type")})}})),e=[...new Map(e.map((e=>[JSON.stringify(e),e]))).values()],this._batchInjectResourceHints(e,"preconnect")}async _loadEverythingNow(){this.lastBreath=Date.now(),this._delayEventListeners(),this._delayJQueryReady(this),this._handleDocumentWrite(),this._registerAllDelayedScripts(),this._preloadAllScripts(),await this._loadScriptsFromList(this.delayedScripts.normal),await this._loadScriptsFromList(this.delayedScripts.defer),await this._loadScriptsFromList(this.delayedScripts.async);try{await this._triggerDOMContentLoaded(),await this._triggerWindowLoad()}catch(e){}window.dispatchEvent(new Event("rocket-allScriptsLoaded")),this._replayClicks()}_registerAllDelayedScripts(){document.querySelectorAll("script[type=rocketlazyloadscript]").forEach((e=>{e.hasAttribute("src")?e.hasAttribute("async")&&!1!==e.async?this.delayedScripts.async.push(e):e.hasAttribute("defer")&&!1!==e.defer||"module"===e.getAttribute("data-rocket-type")?this.delayedScripts.defer.push(e):this.delayedScripts.normal.push(e):this.delayedScripts.normal.push(e)}))}async _transformScript(e){return await this._littleBreath(),new Promise((t=>{const n=document.createElement("script");[...e.attributes].forEach((e=>{let t=e.nodeName;"type"!==t&&("data-rocket-type"===t&&(t="type"),n.setAttribute(t,e.nodeValue))})),e.hasAttribute("src")?(n.addEventListener("load",t),n.addEventListener("error",t)):(n.text=e.text,t());try{e.parentNode.replaceChild(n,e)}catch(e){t()}}))}async _loadScriptsFromList(e){const t=e.shift();return t?(await this._transformScript(t),this._loadScriptsFromList(e)):Promise.resolve()}_preloadAllScripts(){this._batchInjectResourceHints([...this.delayedScripts.normal,...this.delayedScripts.defer,...this.delayedScripts.async],"preload")}_batchInjectResourceHints(e,t){var n=document.createDocumentFragment();e.forEach((e=>{if(e.src){const i=document.createElement("link");i.href=e.src,i.rel=t,"preconnect"!==t&&(i.as="script"),e.getAttribute&&"module"===e.getAttribute("data-rocket-type")&&(i.crossOrigin=!0),e.crossOrigin&&(i.crossOrigin=e.crossOrigin),n.appendChild(i)}})),document.head.appendChild(n)}_delayEventListeners(){let e={};function t(t,n){!function(t){function n(n){return e[t].eventsToRewrite.indexOf(n)>=0?"rocket-"+n:n}e[t]||(e[t]={originalFunctions:{add:t.addEventListener,remove:t.removeEventListener},eventsToRewrite:[]},t.addEventListener=function(){arguments[0]=n(arguments[0]),e[t].originalFunctions.add.apply(t,arguments)},t.removeEventListener=function(){arguments[0]=n(arguments[0]),e[t].originalFunctions.remove.apply(t,arguments)})}(t),e[t].eventsToRewrite.push(n)}function n(e,t){let n=e[t];Object.defineProperty(e,t,{get:()=>n||function(){},set(i){e["rocket"+t]=n=i}})}t(document,"DOMContentLoaded"),t(window,"DOMContentLoaded"),t(window,"load"),t(window,"pageshow"),t(document,"readystatechange"),n(document,"onreadystatechange"),n(window,"onload"),n(window,"onpageshow")}_delayJQueryReady(e){let t=window.jQuery;Object.defineProperty(window,"jQuery",{get:()=>t,set(n){if(n&&n.fn&&!e.allJQueries.includes(n)){n.fn.ready=n.fn.init.prototype.ready=function(t){e.domReadyFired?t.bind(document)(n):document.addEventListener("rocket-DOMContentLoaded",(()=>t.bind(document)(n)))};const t=n.fn.on;n.fn.on=n.fn.init.prototype.on=function(){if(this[0]===window){function e(e){return e.split(" ").map((e=>"load"===e||0===e.indexOf("load.")?"rocket-jquery-load":e)).join(" ")}"string"==typeof arguments[0]||arguments[0]instanceof String?arguments[0]=e(arguments[0]):"object"==typeof arguments[0]&&Object.keys(arguments[0]).forEach((t=>{delete Object.assign(arguments[0],{[e(t)]:arguments[0][t]})[t]}))}return t.apply(this,arguments),this},e.allJQueries.push(n)}t=n}})}async _triggerDOMContentLoaded(){this.domReadyFired=!0,await this._littleBreath(),document.dispatchEvent(new Event("rocket-DOMContentLoaded")),await this._littleBreath(),window.dispatchEvent(new Event("rocket-DOMContentLoaded")),await this._littleBreath(),document.dispatchEvent(new Event("rocket-readystatechange")),await this._littleBreath(),document.rocketonreadystatechange&&document.rocketonreadystatechange()}async _triggerWindowLoad(){await this._littleBreath(),window.dispatchEvent(new Event("rocket-load")),await this._littleBreath(),window.rocketonload&&window.rocketonload(),await this._littleBreath(),this.allJQueries.forEach((e=>e(window).trigger("rocket-jquery-load"))),await this._littleBreath();const e=new Event("rocket-pageshow");e.persisted=this.persisted,window.dispatchEvent(e),await this._littleBreath(),window.rocketonpageshow&&window.rocketonpageshow({persisted:this.persisted})}_handleDocumentWrite(){const e=new Map;document.write=document.writeln=function(t){const n=document.currentScript,i=document.createRange(),r=n.parentElement;let o=e.get(n);void 0===o&&(o=n.nextSibling,e.set(n,o));const s=document.createDocumentFragment();i.setStart(s,0),s.appendChild(i.createContextualFragment(t)),r.insertBefore(s,o)}}async _littleBreath(){Date.now()-this.lastBreath>45&&(await this._requestAnimFrame(),this.lastBreath=Date.now())}async _requestAnimFrame(){return document.hidden?new Promise((e=>setTimeout(e))):new Promise((e=>requestAnimationFrame(e)))}static run(){const e=new RocketLazyLoadScripts;e._addUserInteractionListener(e)}}RocketLazyLoadScripts.run();</script>
+  
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="p:domain_verify" content="7c6ec64b36d7aaf9280af6b39f987eb2">
+  <link data-minify="1" href="https://hoabinhtourist.com/wp-content/cache/min/1/main/wp-content/themes/louis/assets/build/library/font_4750562_x5bzavdq2tm/iconfont.css?ver=1760434352">
+  
+<!-- Search Engine Optimization by Rank Math PRO - https://s.rankmath.com/home -->
+<title>Kinh nghiệm du lịch bán đảo sơn trà Đà Nẵng chi tiết A - Z</title>
+<meta name="description" content="​Khám phá kinh nghiệm du lịch bán đảo Sơn Trà Đà Nẵng từ A đến Z, từ địa điểm tham quan hấp dẫn đến ẩm thực đặc sắc. Xem ngay!">
+<meta name="robots" content="follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large">
+<link rel="canonical" href="https://hoabinhtourist.com/cam-nang-du-lich/ban-dao-son-tra">
+<meta property="og:locale" content="vi_VN">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Kinh nghiệm du lịch bán đảo sơn trà Đà Nẵng chi tiết A - Z">
+<meta property="og:description" content="​Khám phá kinh nghiệm du lịch bán đảo Sơn Trà Đà Nẵng từ A đến Z, từ địa điểm tham quan hấp dẫn đến ẩm thực đặc sắc. Xem ngay!">
+<meta property="og:url" content="https://hoabinhtourist.com/cam-nang-du-lich/ban-dao-son-tra">
+<meta property="og:site_name" content="HoaBinhTourist">
+<meta property="article:section" content="Cẩm nang du lịch">
+<meta property="og:updated_time" content="2025-04-05T10:13:34+07:00">
+<meta property="og:image" content="https://cdn.hoabinhevents.com/hbt/wp-content/uploads/2025/04/05084237/ho-xanh-nhu-vien-ngoc-bich-giua-long-son-tra.jpg">
+<meta property="og:image:secure_url" content="https://cdn.hoabinhevents.com/hbt/wp-content/uploads/2025/04/05084237/ho-xanh-nhu-vien-ngoc-bich-giua-long-son-tra.jpg">
+<meta property="og:image:width" content="900">
+<meta property="og:image:height" content="600">
+<meta property="og:image:alt" content="Hồ Xanh như viên ngọc bích giữa lòng Sơn Trà">
+<meta property="og:image:type" content="image/jpeg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Kinh nghiệm du lịch bán đảo sơn trà Đà Nẵng chi tiết A - Z">
+<meta name="twitter:description" content="​Khám phá kinh nghiệm du lịch bán đảo Sơn Trà Đà Nẵng từ A đến Z, từ địa điểm tham quan hấp dẫn đến ẩm thực đặc sắc. Xem ngay!">
+<meta name="twitter:image" content="https://cdn.hoabinhevents.com/hbt/wp-content/uploads/2025/04/05084237/ho-xanh-nhu-vien-ngoc-bich-giua-long-son-tra.jpg">
+<meta name="twitter:label1" content="Written by">
+<meta name="twitter:data1" content="Kim Thu">
+<meta name="twitter:label2" content="Time to read">
+<meta name="twitter:data2" content="15 minutes">
+<!-- /Rank Math WordPress SEO plugin -->
+
+<link rel="dns-prefetch" href="//cdnjs.cloudflare.com">
+<link rel="dns-prefetch" href="//cdn.hoabinhevents.com">
+
+<link rel="stylesheet" id="classic-theme-styles-css" href="https://hoabinhtourist.com/wp-includes/css/classic-themes.min.css?ver=1" media="all">
+<style id="global-styles-inline-css">
+body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--duotone--dark-grayscale: url('#wp-duotone-dark-grayscale');--wp--preset--duotone--grayscale: url('#wp-duotone-grayscale');--wp--preset--duotone--purple-yellow: url('#wp-duotone-purple-yellow');--wp--preset--duotone--blue-red: url('#wp-duotone-blue-red');--wp--preset--duotone--midnight: url('#wp-duotone-midnight');--wp--preset--duotone--magenta-yellow: url('#wp-duotone-magenta-yellow');--wp--preset--duotone--purple-green: url('#wp-duotone-purple-green');--wp--preset--duotone--blue-orange: url('#wp-duotone-blue-orange');--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;}:where(.is-layout-flex){gap: 0.5em;}body .is-layout-flow > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}body .is-layout-flow > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}body .is-layout-flow > .aligncenter{margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}body .is-layout-constrained > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}body .is-layout-constrained > .aligncenter{margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > :where(:not(.alignleft):not(.alignright):not(.alignfull)){max-width: var(--wp--style--global--content-size);margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > .alignwide{max-width: var(--wp--style--global--wide-size);}body .is-layout-flex{display: flex;}body .is-layout-flex{flex-wrap: wrap;align-items: center;}body .is-layout-flex > *{margin: 0;}:where(.wp-block-columns.is-layout-flex){gap: 2em;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+.wp-block-navigation a:where(:not(.wp-element-button)){color: inherit;}
+:where(.wp-block-columns.is-layout-flex){gap: 2em;}
+.wp-block-pullquote{font-size: 1.5em;line-height: 1.6;}
+</style>
+<style id="woocommerce-inline-inline-css">
+.woocommerce form .form-row .required { visibility: visible; }
+</style>
+<link data-minify="1" rel="stylesheet" id="bootstrap-css-css" href="https://hoabinhtourist.com/wp-content/cache/min/1/wp-content/themes/louis/assets/build/library/css/bootstrap.min.css?ver=1760434352" media="all">
+<link data-minify="1" rel="stylesheet" id="app-min-css-css" href="https://hoabinhtourist.com/wp-content/cache/min/1/wp-content/themes/louis/assets/build/library/css/app.min.css?ver=1760434353" media="all">
+<link data-minify="1" rel="stylesheet" id="responsive-css-css" href="https://hoabinhtourist.com/wp-content/cache/min/1/wp-content/themes/louis/assets/build/library/css/responsive.css?ver=1760434353" media="all">
+<link data-minify="1" rel="stylesheet" id="owl-carousel-css" href="https://hoabinhtourist.com/wp-content/cache/min/1/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css?ver=1760434353" media="all">
+<link data-minify="1" rel="stylesheet" id="brand-custom-css" href="https://hoabinhtourist.com/wp-content/cache/min/1/profiles/brand-custom.css?ver=1760434353" media="all">
+<link data-minify="1" rel="stylesheet" id="fixedtoc-style-css" href="https://hoabinhtourist.com/wp-content/cache/min/1/wp-content/plugins/fixed-toc/frontend/assets/css/ftoc.min.css?ver=1760434396" media="all">
+<style id="fixedtoc-style-inline-css">
+.ftwp-in-post#ftwp-container-outer { height: auto; } #ftwp-container.ftwp-wrap #ftwp-contents { width: 250px; height: 300px; } .ftwp-in-post#ftwp-container-outer #ftwp-contents { height: auto; } .ftwp-in-post#ftwp-container-outer.ftwp-float-none #ftwp-contents { width: 250px; } #ftwp-container.ftwp-wrap #ftwp-trigger { width: 46px; height: 46px; font-size: 27.6px; } #ftwp-container #ftwp-trigger.ftwp-border-thin { font-size: 27.1px; } #ftwp-container.ftwp-wrap #ftwp-header { font-size: 18px; font-family: Arial, Helvetica, sans-serif; } #ftwp-container.ftwp-wrap #ftwp-header-title { font-weight: bold; } #ftwp-container.ftwp-wrap #ftwp-list { font-size: 14px; font-family: inherit; } #ftwp-container.ftwp-wrap #ftwp-list .ftwp-anchor::before { font-size: 5.6px; } #ftwp-container #ftwp-list.ftwp-strong-first>.ftwp-item>.ftwp-anchor .ftwp-text { font-size: 15.4px; } #ftwp-container.ftwp-wrap #ftwp-list.ftwp-strong-first>.ftwp-item>.ftwp-anchor::before { font-size: 7px; } #ftwp-container.ftwp-wrap #ftwp-trigger { color: #333; background: rgba(243,243,243,0.95); } #ftwp-container.ftwp-wrap #ftwp-trigger { border-color: rgba(51,51,51,0.95); } #ftwp-container.ftwp-wrap #ftwp-contents { border-color: rgba(51,51,51,0.95); } #ftwp-container.ftwp-wrap #ftwp-header { color: #333; background: rgba(255,255,255,0.95); } #ftwp-container.ftwp-wrap #ftwp-contents:hover #ftwp-header { background: #ffffff; } #ftwp-container.ftwp-wrap #ftwp-list { color: #333; background: rgba(255,255,255,0.95); } #ftwp-container.ftwp-wrap #ftwp-contents:hover #ftwp-list { background: #ffffff; } #ftwp-container.ftwp-wrap #ftwp-list .ftwp-anchor:hover { color: #00A368; } #ftwp-container.ftwp-wrap #ftwp-list .ftwp-anchor:focus, #ftwp-container.ftwp-wrap #ftwp-list .ftwp-active, #ftwp-container.ftwp-wrap #ftwp-list .ftwp-active:hover { color: #fff; } #ftwp-container.ftwp-wrap #ftwp-list .ftwp-text::before { background: rgba(4,36,93,0.95); } .ftwp-heading-target::before { background: rgba(4,36,93,0.95); }
+.ftwp-in-post#ftwp-container-outer.ftwp-float-none #ftwp-contents{ width: 100%; margin-top:30px; } #ftwp-container.ftwp-wrap #ftwp-list .ftwp-anchor:hover{ color: #04245d; } #ftwp-container.ftwp-wrap #ftwp-contents{ border: 1px solid #ccc; } .checkbox_start_wrapper:first-child .start-checkbox+label::before { content: "All" !important; }
+</style>
+<script type="rocketlazyloadscript" src="https://hoabinhtourist.com/wp-includes/js/jquery/jquery.min.js?ver=3.6.1" id="jquery-core-js" defer=""></script>
+<link rel="https://api.w.org/" href="https://hoabinhtourist.com/wp-json/"><link rel="alternate" type="application/json" href="https://hoabinhtourist.com/wp-json/wp/v2/posts/19097"><link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://hoabinhtourist.com/wp-includes/wlwmanifest.xml">
+	<noscript><style>.woocommerce-product-gallery{ opacity: 1 !important; }</style></noscript>
+						
+					<style>
+						@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 300;
+  font-stretch: normal;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsiH0B4gaVc.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-stretch: normal;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsjZ0B4gaVc.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-stretch: normal;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsg-1x4gaVc.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/ptsans/v17/jizaRExUiTo99u79D0KEwA.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/ptsans/v17/jizfRExUiTo99u79B_mh0O6tKA.ttf) format('truetype');
+}
+					</style>
+					<link rel="icon" href="https://cdn.hoabinhevents.com/hbt/wp-content/uploads/2022/05/21152854/cropped-download-2-32x32.png" sizes="32x32">
+<link rel="icon" href="https://cdn.hoabinhevents.com/hbt/wp-content/uploads/2022/05/21152854/cropped-download-2-192x192.png" sizes="192x192">
+<link rel="apple-touch-icon" href="https://cdn.hoabinhevents.com/hbt/wp-content/uploads/2022/05/21152854/cropped-download-2-180x180.png">
+<meta name="msapplication-TileImage" content="https://cdn.hoabinhevents.com/hbt/wp-content/uploads/2022/05/21152854/cropped-download-2-270x270.png">
+<noscript><style id="rocket-lazyload-nojs-css">.rll-youtube-player, [data-lazy-src]{display:none !important;}</style></noscript><noscript><style>.perfmatters-lazy[data-src]{display:none !important;}</style></noscript><style>.perfmatters-lazy:not(picture),.perfmatters-lazy>img{opacity:0}.perfmatters-lazy.pmloaded,.perfmatters-lazy>img.pmloaded,.perfmatters-lazy[data-ll-status=entered],.perfmatters-lazy.pmloaded>img{opacity:1;transition:opacity 500ms}</style>  <script type="rocketlazyloadscript" async="" src="https://www.googletagmanager.com/gtag/js?id=G-E5F09DWRJ0"></script>
+  <script type="rocketlazyloadscript">
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+
+    gtag('config', 'G-E5F09DWRJ0');
+  </script>
+  <!-- Meta Pixel Code -->
+  <script type="rocketlazyloadscript">
+    ! function(f, b, e, v, n, t, s) {
+      if (f.fbq) return;
+      n = f.fbq = function() {
+        n.callMethod ?
+          n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+      };
+      if (!f._fbq) f._fbq = n;
+      n.push = n;
+      n.loaded = !0;
+      n.version = '2.0';
+      n.queue = [];
+      t = b.createElement(e);
+      t.async = !0;
+      t.src = v;
+      s = b.getElementsByTagName(e)[0];
+      s.parentNode.insertBefore(t, s)
+    }(window, document, 'script',
+      'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '599002959106233');
+    fbq('track', 'PageView');
+  </script>
+  <noscript><img height="1" width="1" style="display:none"
+      src="https://www.facebook.com/tr?id=599002959106233&ev=PageView&noscript=1" /></noscript>
+  <!-- End Meta Pixel Code -->
+  <script type="rocketlazyloadscript" src="https://hoabinhtourist.com/wp-content/themes/louis/assets/build/js/lunar-calendar.js" defer=""></script>
+
+  <script type="application/ld+json">
+    {
+      "@context": "http://schema.org",
+      "@type": "HoaBinhTourist",
+      "name": "Công Ty Tổ Chức Tour Du Lịch - Hòa Bình Tourist",
+      "url": "https://hoabinhtourist.com",
+      "description": "HoaBinh Tourist là một trong những công ty lữ hành và cung cấp dịch vụ du lịch hàng đầu Việt Nam.",
+      "image": "https://hoabinhtourist.com/wp-content/uploads/2022/06/cropped-cropped-logo-hbt-2-2-e1653624157571.png",
+      "author": {
+        "@type": "Person",
+        "name": "HoaBinhTourist"
+      }
+    }
+  </script>
+
+  <link data-minify="1" rel="stylesheet" href="https://hoabinhtourist.com/wp-content/cache/min/1/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css?ver=1760434353" crossorigin="anonymous" referrerpolicy="no-referrer">
+  <link data-minify="1" rel="stylesheet" href="https://hoabinhtourist.com/wp-content/cache/min/1/ajax/libs/slick-carousel/1.9.0/slick.min.css?ver=1760434353" crossorigin="anonymous" referrerpolicy="no-referrer">
+
+
+
+  <script type="rocketlazyloadscript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous" defer=""></script>
+
+<link href="https://www.googletagmanager.com" rel="preconnect"><link href="https://ajax.googleapis.com" rel="preconnect" crossorigin="anonymous"><link href="https://cdnjs.cloudflare.com" rel="preconnect"><link href="https://hoabinhclub.com" rel="preconnect"><link href="https://cdnjs.cloudflare.com" rel="preconnect" crossorigin="anonymous"></head>
+
+<body class="post-template-default single single-post postid-19097 single-format-standard wp-custom-logo theme-louis woocommerce-no-js has-ftoc">
+  <style type="text/css">
+    #backToTop {
+      position: fixed;
+      bottom: 100px;
+      right: 20px;
+      width: 50px;
+      height: 50px;
+      background-color: #efc40d;
+      color: white;
+      border: none;
+      border-radius: 50%;
+      font-size: 18px;
+      cursor: pointer;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+      z-index: 1000;
+      transition: all 0.3s ease;
+    }
+
+
+    #show-menu-mobile {
+      display: none;
+    }
+
+    #site-header {
+      position: relative;
+    }
+
+    /* #slickslide_product {
+      margin-top: 45px;
+    } */
+
+    #backToTop:hover {
+      background-color: #efc40d;
+    }
+
+    .slick-next {
+      right: 0
+    }
+
+    .info-footer {
+      width: 100%;
+      height: 80px;
+      position: fixed;
+      z-index: 99999999999;
+      bottom: 0
+    }
+
+    .info-footer ul {
+      list-style-type: none;
+      margin: 0 auto;
+      width: 620px;
+      background-color: #fff;
+      height: 60px;
+      border-radius: 10px;
+      padding: 0 10px 5px 10px
+    }
+
+    .info-footer ul li {
+      float: left
+    }
+
+    .info-footer img {
+      width: 200px;
+      height: 61px
+    }
+
+    .boxlag {
+      float: right;
+      width: 100%;
+      height: auto;
+      position: relative
+    }
+
+    .boxlagabs {
+      float: right;
+      position: absolute;
+      right: 3%;
+      top: 30px;
+      z-index: 99999999999
+    }
+
+    .entry-header h1 {
+      text-transform: none !important;
+      font-size: 17px
+    }
+
+    .entry-content h2 {
+      font-size: 15px
+    }
+
+    .entry-content img {
+      max-width: 100% !important
+    }
+
+    blockquote {
+      font-size: inherit !important;
+      opacity: .6;
+      font-style: italic
+    }
+
+    .f11a1 .at1 {
+      font-size: 12px !important;
+    }
+
+    @media only screen and (min-width:320px) and (max-width:736px) {
+      .info-footer {
+        height: 50px
+      }
+
+      .info-footer ul {
+        height: 40px;
+        width: 410px
+      }
+
+      .info-footer img {
+        width: 130px;
+        height: auto
+      }
+
+
+
+      .boxlagabs {
+        top: 0
+      }
+
+      .navbar-toggle {
+        margin: 25px 0 0 0 !important
+      }
+    }
+
+    .footer__logo img {
+      height: auto !important
+    }
+
+    .cs-action-button-container {
+      position: fixed;
+      right: 0;
+      z-index: 9999;
+      top: 20%;
+      background: #fff;
+    }
+
+    .cs-action-button {
+      overflow: hidden;
+      box-shadow: 0 .46875rem 2.1875rem rgb(90 97 105 / .1), 0 .9375rem 1.40625rem rgb(90 97 105 / .1), 0 .25rem .53125rem rgb(90 97 105 / .12), 0 .125rem .1875rem rgb(90 97 105 / .1);
+      -webkit-transition: 0.3s ease;
+      -moz-transition: 0.3s ease;
+      -ms-transition: 0.3s ease;
+      -o-transition: 0.3s ease;
+      transition: 0.3s ease
+    }
+
+    .rounded-left,
+    .cs-action-button-container {
+      border-radius: 1rem 0 0 1rem !important
+    }
+
+    .cs-action-button .action-item {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 55px;
+      height: 55px;
+      border-bottom: 1px solid #dee2e6
+    }
+
+    .cs-action-button .action-item .animate {
+      display: flex;
+      align-items: center;
+      justify-content: center
+    }
+
+    .cs-action-button .action-item .icon-inner {
+      display: inline-block;
+      font-size: 24px
+    }
+
+    .text-muted {
+      color: #6c757d !important
+    }
+
+    .cs-bg-fill {
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center center;
+      background-attachment: scroll;
+      height: auto
+    }
+
+    .cs-action-button .action-item .icon-inner {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 26px;
+      height: 26px
+    }
+
+    .sb-popup-message {
+      display: none
+    }
+
+    .social-icons {
+      padding: 20px 0;
+    }
+
+    .social-icons a {
+      margin: 0 10px;
+      color: #fff;
+      /* Màu trắng, bạn có thể đổi thành màu khác */
+      font-size: 24px;
+      transition: color 0.3s ease;
+    }
+
+    .three-phone a {
+      font-size: 12px;
+    }
+
+    .three-phone-container {
+      display: flex;
+      flex-direction: row;
+      column-gap: 10px;
+    }
+
+    .social-icons a:hover {
+      color: #1da1f2;
+      /* Đổi màu khi hover (vd: màu xanh Facebook) */
+    }
+
+    .title-louis-mobile {
+      display: none;
+    }
+
+    @media only screen and (min-width:320px) and (max-width:736px) {
+      .global-desktop {
+        display: none;
+      }
+
+      .title-louis-mobile {
+        font-size: 24px;
+        font-weight: bold;
+        display: block !important;
+        line-height: 5rem;
+        padding: 0px;
+      }
+    }
+  </style>
+
+  <div class="cs-action-button-container">
+    <div class="cs-action-button bg-white rounded-left">
+
+      <a rel="nofollow" href="tel:0918640988" class="d-none d-lg-flex border-bottom-0 action-item hotline ga-call" data-toggle="tooltip" data-placement="left" data-original-title="phone">
+        <span data-bg="https://cdn.hoabinhevents.com/hbt/telephone.png" class="icon-inner cs-bg-fill lazyloaded rocket-lazyload entered" style="background-image: url(&quot;https://cdn.hoabinhevents.com/hbt/telephone.png&quot;);" data-ll-status="loaded"></span>
+      </a>
+
+      <a rel="nofollow" href="https://m.me/dulichhoabinh" class="d-none d-lg-flex border-bottom-0 action-item call-advisor ga-call-advisor" data-toggle="tooltip" data-placement="left" data-original-title="messenger!">
+        <span data-bg="https://hoabinhtourist.com/wp-content/themes/louis/assets/build/library/images/messenger.png;" class="icon-inner cs-bg-fill lazyloaded rocket-lazyload entered" style="background-image: url(&quot;https://hoabinhtourist.com/wp-content/themes/louis/assets/build/library/images/messenger.png;&quot;);" data-ll-status="loaded"></span>
+      </a>
+
+      <a rel="nofollow" href="https://wa.me/84939311911" class="d-none d-lg-flex border-bottom-0 action-item call-advisor ga-call-advisor" data-toggle="tooltip" data-placement="left" data-original-title="messenger!">
+        <span data-bg="https://cdn.hoabinhevents.com/hbt/whatsapp.webp" class="icon-inner cs-bg-fill lazyloaded rocket-lazyload entered" style="background-size: 42px; background-image: url(&quot;https://cdn.hoabinhevents.com/hbt/whatsapp.webp&quot;);" data-ll-status="loaded"></span>
+      </a>
+    </div>
+  </div>
+
+
+  <!-- Google Tag Manager -->
+  <script type="rocketlazyloadscript">
+    (function(w, d, s, l, i) {
+      w[l] = w[l] || [];
+      w[l].push({
+        'gtm.start': new Date().getTime(),
+        event: 'gtm.js'
+      });
+      var f = d.getElementsByTagName(s)[0],
+        j = d.createElement(s),
+        dl = l != 'dataLayer' ? '&l=' + l : '';
+      j.async = true;
+      j.src =
+        'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+      f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-TRQTSMH');
+  </script>
+  <!-- End Google Tag Manager -->
+
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-dark-grayscale"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "></feColorMatrix><feComponentTransfer color-interpolation-filters="sRGB"><feFuncR type="table" tableValues="0 0.49803921568627"></feFuncR><feFuncG type="table" tableValues="0 0.49803921568627"></feFuncG><feFuncB type="table" tableValues="0 0.49803921568627"></feFuncB><feFuncA type="table" tableValues="1 1"></feFuncA></feComponentTransfer><feComposite in2="SourceGraphic" operator="in"></feComposite></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-grayscale"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "></feColorMatrix><feComponentTransfer color-interpolation-filters="sRGB"><feFuncR type="table" tableValues="0 1"></feFuncR><feFuncG type="table" tableValues="0 1"></feFuncG><feFuncB type="table" tableValues="0 1"></feFuncB><feFuncA type="table" tableValues="1 1"></feFuncA></feComponentTransfer><feComposite in2="SourceGraphic" operator="in"></feComposite></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-purple-yellow"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "></feColorMatrix><feComponentTransfer color-interpolation-filters="sRGB"><feFuncR type="table" tableValues="0.54901960784314 0.98823529411765"></feFuncR><feFuncG type="table" tableValues="0 1"></feFuncG><feFuncB type="table" tableValues="0.71764705882353 0.25490196078431"></feFuncB><feFuncA type="table" tableValues="1 1"></feFuncA></feComponentTransfer><feComposite in2="SourceGraphic" operator="in"></feComposite></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-blue-red"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "></feColorMatrix><feComponentTransfer color-interpolation-filters="sRGB"><feFuncR type="table" tableValues="0 1"></feFuncR><feFuncG type="table" tableValues="0 0.27843137254902"></feFuncG><feFuncB type="table" tableValues="0.5921568627451 0.27843137254902"></feFuncB><feFuncA type="table" tableValues="1 1"></feFuncA></feComponentTransfer><feComposite in2="SourceGraphic" operator="in"></feComposite></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-midnight"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "></feColorMatrix><feComponentTransfer color-interpolation-filters="sRGB"><feFuncR type="table" tableValues="0 0"></feFuncR><feFuncG type="table" tableValues="0 0.64705882352941"></feFuncG><feFuncB type="table" tableValues="0 1"></feFuncB><feFuncA type="table" tableValues="1 1"></feFuncA></feComponentTransfer><feComposite in2="SourceGraphic" operator="in"></feComposite></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-magenta-yellow"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "></feColorMatrix><feComponentTransfer color-interpolation-filters="sRGB"><feFuncR type="table" tableValues="0.78039215686275 1"></feFuncR><feFuncG type="table" tableValues="0 0.94901960784314"></feFuncG><feFuncB type="table" tableValues="0.35294117647059 0.47058823529412"></feFuncB><feFuncA type="table" tableValues="1 1"></feFuncA></feComponentTransfer><feComposite in2="SourceGraphic" operator="in"></feComposite></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-purple-green"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "></feColorMatrix><feComponentTransfer color-interpolation-filters="sRGB"><feFuncR type="table" tableValues="0.65098039215686 0.40392156862745"></feFuncR><feFuncG type="table" tableValues="0 1"></feFuncG><feFuncB type="table" tableValues="0.44705882352941 0.4"></feFuncB><feFuncA type="table" tableValues="1 1"></feFuncA></feComponentTransfer><feComposite in2="SourceGraphic" operator="in"></feComposite></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-blue-orange"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "></feColorMatrix><feComponentTransfer color-interpolation-filters="sRGB"><feFuncR type="table" tableValues="0.098039215686275 1"></feFuncR><feFuncG type="table" tableValues="0 0.66274509803922"></feFuncG><feFuncB type="table" tableValues="0.84705882352941 0.41960784313725"></feFuncB><feFuncA type="table" tableValues="1 1"></feFuncA></feComponentTransfer><feComposite in2="SourceGraphic" operator="in"></feComposite></filter></defs></svg>    <header id="site-header">
+    <div class="boxlag">
+      <!-- <div class="boxlagabs">
+     
+      </div> -->
+      <div class="boxlagabs">
+                                            <a href="https://hoabinhtourist.com/cam-nang-du-lich/ban-dao-son-tra"><img style="height:15px;margin-right: 5px;width:25px;" src="https://hoabinhtourist.com/images/vietnam-flag.jpg" data-lazy-src="https://hoabinhtourist.com/images/vietnam-flag.jpg" data-ll-status="loaded" class="entered lazyloaded"><noscript><img style="height:15px;margin-right: 5px;width:25px;"
+                  src="https://hoabinhtourist.com/images/vietnam-flag.jpg"></noscript></a>
+                                                <a href="https://hoabinhtourist.com/en/" rel="nofollow"><img style="height:15px;width:25px;" src="https://hoabinhtourist.com/images/eflag.jpg" data-lazy-src="https://hoabinhtourist.com/images/eflag.jpg" data-ll-status="loaded" class="entered lazyloaded"><noscript><img style="height:15px;width:25px;"
+                  src="https://hoabinhtourist.com/images/eflag.jpg"></noscript></a>
+                              
+
+      </div>
+    </div>
+    <div class="container">
+      <nav id="navbar-hbt" class="navbar">
+        <div class="row">
+          <div class="">
+            <div class="navbar-header">
+              <label class="navbar-toggle" for="show-menu-mobile" type="button" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </label>
+              <input type="checkbox" id="show-menu-mobile" class="d-sm-none">
+              <a class="navbar-brand logo" href="/"><img alt="Logo Hòa Bình Tourist" src="https://cdn.hoabinhevents.com/hbt/wp-content/uploads/2024/11/01103643/cropped-1-3-8.png" data-lazy-src="https://cdn.hoabinhevents.com/hbt/wp-content/uploads/2024/11/01103643/cropped-1-3-8.png" data-ll-status="loaded" class="entered lazyloaded"><noscript><img alt="Logo Hòa Bình Tourist"
+                  src="https://cdn.hoabinhevents.com/hbt/wp-content/uploads/2024/11/01103643/cropped-1-3-8.png"></noscript></a>
+
+              <label for="show-menu-mobile" class="nav-overlay d-sm-none"></label>
+              <div class="navbar-collapse d-sm-none" id="navbar-list">
+                
+<ul id="top-navigation" class="nav navbar-nav">
+            <li id="menu-item-12" class="menu-item-12">
+            <a rel="nofollow" href="https://hoabinhtourist.com/ve-chung-toi">
+                Về chúng tôi            </a>
+        </li>
+    		
+        <li id="menu-item-5438" class="menu-item-5438 dropdown">
+		<a class="dropdown-toggle" data-toggle="dropdown" href="/du-lich-trong-nuoc"> Du lịch nội địa        <span class="caret"></span></a>
+            <ul role="menu" class="dropdown-menu">
+                    <li id="menu-item-18925" class="menu-item-18925">
+            <a href="https://hoabinhtourist.com/tour-noi-dia-khoi-hanh-tu-ha-noi">
+                Tour nội địa khởi hành từ Hà Nội            </a>
+        </li>
+            <li id="menu-item-18924" class="menu-item-18924">
+            <a href="https://hoabinhtourist.com/tour-noi-dia-khoi-hanh-tu-da-nang">
+                Tour nội địa khởi hành từ Đà Nẵng            </a>
+        </li>
+            <li id="menu-item-18923" class="menu-item-18923">
+            <a href="https://hoabinhtourist.com/tour-noi-dia-khoi-hanh-tu-tp-hcm">
+                Tour nội địa khởi hành từ Tp. HCM            </a>
+        </li>
+                </ul>
+        </li>
+			
+        <li id="menu-item-4171" class="menu-item-4171 dropdown">
+		<a class="dropdown-toggle" data-toggle="dropdown" href="https://hoabinhtourist.com/du-lich-nuoc-ngoai"> Du lịch nước ngoài        <span class="caret"></span></a>
+            <ul role="menu" class="dropdown-menu">
+                    <li id="menu-item-18922" class="menu-item-18922">
+            <a href="https://hoabinhtourist.com/tour-nuoc-ngoai-khoi-hanh-tu-ha-noi">
+                Tour nước ngoài khởi hành từ Hà Nội            </a>
+        </li>
+            <li id="menu-item-18921" class="menu-item-18921">
+            <a href="https://hoabinhtourist.com/tour-nuoc-ngoai-khoi-hanh-tu-da-nang">
+                Tour nước ngoài khởi hành từ Đà Nẵng            </a>
+        </li>
+            <li id="menu-item-18920" class="menu-item-18920">
+            <a href="https://hoabinhtourist.com/tour-nuoc-ngoai-khoi-hanh-tu-tp-hcm">
+                Tour nước ngoài khởi hành từ Tp. HCM            </a>
+        </li>
+                </ul>
+        </li>
+	        <li id="menu-item-15" class="menu-item-15">
+            <a href="/cam-nang-du-lich">
+                Cẩm nang du lịch            </a>
+        </li>
+    		
+			<li class="li-extra-menu">
+          <a class="dropdown-toggle extra-menu" data-toggle="dropdown" href="#" style="padding: 9px 20px"><i class="fal fa-list fa-2x"></i></a>
+      			<ul class="dropdown-menu">
+	  			        <li id="menu-item-7756" class="menu-item-7756">
+            <a href="https://profile.hoabinhtourist.com">
+                Hồ sơ năng lực            </a>
+        </li>
+            <li id="menu-item-11362" class="menu-item-11362">
+            <a href="https://hoabinhtourist.com/bao-chi-noi-ve-chung-toi">
+                Báo chí nói về chúng tôi            </a>
+        </li>
+            <li id="menu-item-215" class="menu-item-215">
+            <a rel="nofollow" href="https://hoabinhtourist.com/cam-nang-du-lich/tin-tuc">
+                Tin tức            </a>
+        </li>
+            <li id="menu-item-9920" class="menu-item-9920">
+            <a href="https://hoabinhbus.com/">
+                Thuê xe            </a>
+        </li>
+            <li id="menu-item-9921" class="menu-item-9921">
+            <a href="https://booking.websitehoinghi.com">
+                Khách sạn            </a>
+        </li>
+            <li id="menu-item-9922" class="menu-item-9922">
+            <a href="https://hoabinhairlines.vn/">
+                Vé máy bay            </a>
+        </li>
+               </ul>
+		</li>
+
+		</ul>
+              </div>
+            </div>
+          </div>
+          <div class="">
+            <div class="collapse navbar-collapse js-navbar-collapse">
+                          </div>
+            <!-- /.nav-collapse -->
+          </div>
+        </div>
+
+      </nav>
+    </div>
+  </header><!-- #site-header -->
+  <!-- <div style="width: 100vw; background: #000;">
+    <div class="global-desktop" style="width:100vw;text-align:center;margin:auto">
+      <img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E" alt="Global Connection Banner"
+        style="max-width:100%;height:auto;" data-lazy-src="https://cdn.hoabinhevents.com/main/global-vi.png"><noscript><img src="https://cdn.hoabinhevents.com/main/global-vi.png" alt="Global Connection Banner"
+        style="max-width:100%;height:auto;"></noscript>
+    </div>
+    <div class="title-louis-mobile text-center animated flipInX">
+      <img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E" alt="HoaBinh Group" class="img-responsive" data-lazy-src="https://cdn.hoabinhevents.com/main/global-m-vi.png"><noscript><img src="https://cdn.hoabinhevents.com/main/global-m-vi.png" alt="HoaBinh Group" class="img-responsive"></noscript>
+    </div>
+  </div> -->
+<style>
+	table,
+	td {
+		padding: 15px;
+	}
+
+	.entry-content p {
+		margin: 15px 0px;
+	}
+
+	.entry-content figure {
+		width: 100% !important;
+		text-align: center;
+		font-style: italic;
+	}
+
+	figcaption {
+		display: block;
+		padding: 5px 0px;
+	}
+
+	.entry-content figure img {
+		max-width: 100%;
+		height: auto;
+	}
+
+	.entry-content h2,
+	.entry-content h3,
+	.entry-content h4,
+	.entry-content h5 {
+		text-transform: none;
+	}
+
+	.entry-content h2 {
+		font-size: 18px;
+	}
+
+	.entry-content h3 {
+		font-size: 16px;
+	}
+
+	.entry-content h4 {
+		font-size: 16px !important;
+		color: chocolate;
+	}
+
+	.entry-content .aligncenter {
+		display: block;
+		margin: 0 auto;
+	}
+
+	.entry-content img {
+		height: auto !important
+	}
+
+	/* Định dạng các sản phẩm trong danh sách */
+	.products {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		margin: 0 -15px;
+	}
+
+	.product {
+		width: calc(33.33% - 30px);
+		/* Hiển thị 3 sản phẩm mỗi hàng */
+		margin: 0 15px 30px 15px;
+		border: 1px solid #ddd;
+		padding: 15px;
+		text-align: center;
+		background-color: #fff;
+		transition: transform 0.3s ease;
+	}
+
+	.product:hover {
+		transform: scale(1.05);
+	}
+
+	/* Định dạng tiêu đề sản phẩm */
+	.product h2 {
+		font-size: 18px;
+		margin-bottom: 10px;
+	}
+
+	/* Định dạng giá sản phẩm */
+	.product .price {
+		font-size: 16px;
+		color: #f00;
+		/* Màu chữ giá */
+		font-weight: bold;
+	}
+
+	/* Định dạng nút mua sản phẩm */
+	.product .add-to-cart-button {
+		display: block;
+		margin-top: 15px;
+		background-color: #0073e6;
+		/* Màu nền nút */
+		color: #fff;
+		/* Màu chữ nút */
+		padding: 10px 20px;
+		text-decoration: none;
+		border-radius: 5px;
+		transition: background-color 0.3s ease;
+	}
+
+	.product .add-to-cart-button:hover {
+		background-color: #005bb7;
+		/* Màu nền nút khi hover */
+	}
+
+	#ftwp-postcontent ul {
+		margin: 0px;
+		padding: 0px;
+		padding-left: 20px;
+		line-height: 30px;
+	}
+
+	#ftwp-postcontent .product h2 {
+		font-size: 14px;
+		line-height: 20px;
+	}
+
+	#ftwp-postcontent ul li img {
+		max-width: 100%;
+		max-height: 200px;
+	}
+
+	#ftwp-postcontent ul li p {
+		display: none;
+	}
+
+	#ftwp-postcontent ul li a.button {
+		display: none;
+	}
+
+	.resp1 {
+		display: block;
+	}
+
+	.resp2 {
+		display: none;
+	}
+
+	@media only screen and (min-width: 320px) and (max-width: 736px) {
+		figure {
+			max-width: 100%;
+		}
+
+		.resp1 {
+			display: none;
+		}
+
+		.resp2 {
+			display: block;
+		}
+	}
+</style>
+
+<main id="site-content" role="main">
+		<div id="primary">
+		<main id="main" class="site-main mt-5" role="main">
+			<div class="container">
+				<!-- <div class="row">
+				  <a href="https://hoabinhtourist.com/du-lich-ha-long">
+					  <img class="resp1" style="max-width:100%;margin-top: 10px;border-radius: 10px;" alt="Tour Ông Hoàng Mười" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E" data-lazy-src="https://hoabinhtourist.com/images/tour ha long 1.png" /><noscript><img class="resp1" style="max-width:100%;margin-top: 10px;border-radius: 10px;" alt="Tour Ông Hoàng Mười" src="https://hoabinhtourist.com/images/tour ha long 1.png" /></noscript>
+					  <img class="resp2" style="max-width:100%;margin-top: 10px;border-radius: 10px;" alt="Tour Ông Hoàng Mười Mobi" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E" data-lazy-src="https://hoabinhtourist.com/images/tour ha long 1.png" /><noscript><img class="resp2" style="max-width:100%;margin-top: 10px;border-radius: 10px;" alt="Tour Ông Hoàng Mười Mobi" src="https://hoabinhtourist.com/images/tour ha long 1.png" /></noscript>
+					</a>
+				</div> -->
+			</div>
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-8 col-md-8 col-sm-12">
+													<div class="post-wrap">
+								
+<article id="post-19097" class="mb-5 post-19097 post type-post status-publish format-standard has-post-thumbnail hentry category-cam-nang-du-lich post-ftoc">
+	<header class="entry-header">
+	<h1 class="page-title text-dark ">Bán đảo Sơn Trà: Chốn bình yên giữa lòng thành phố biển</h1></header>
+<script type="rocketlazyloadscript">window.addEventListener('DOMContentLoaded', function() {
+    $(document).ready(function(){
+         $('.size-full').css("height", "470px");
+    }); 
+});</script>
+<div class="entry-meta mb-3">
+	<span class="posted-on text-secondary"><span class="dashicons dashicons-calendar"></span>5/4/2025 <span class="dashicons dashicons-groups"></span> 12207 lượt xem</span></div>
+
+<div class="entry-content">
+	<div id="ftwp-container-outer" class="ftwp-in-post ftwp-float-none"><div id="ftwp-container" class="ftwp-wrap ftwp-hidden-state ftwp-minimize ftwp-middle-right"><button type="button" id="ftwp-trigger" class="ftwp-shape-round ftwp-border-thin" title="click To Maximize The Table Of Contents"><span class="ftwp-trigger-icon ftwp-icon-menu"></span></button><nav id="ftwp-contents" class="ftwp-shape-square ftwp-border-medium" data-colexp="collapse"><header id="ftwp-header"><span id="ftwp-header-control" class="ftwp-icon-menu"></span><button type="button" id="ftwp-header-minimize" class="ftwp-icon-collapse" aria-labelledby="ftwp-header-title" aria-label="Expand or collapse"></button><h3 id="ftwp-header-title">NỘI DUNG BÀI VIẾT</h3></header><ol id="ftwp-list" class="ftwp-liststyle-none ftwp-effect-sweep-to-right ftwp-list-nest ftwp-strong-first ftwp-colexp ftwp-colexp-icon" style="display: none"><li class="ftwp-item ftwp-has-sub ftwp-expand"><button type="button" aria-label="Expand or collapse" class="ftwp-icon-expand"></button><a class="ftwp-anchor" href="#ftoc-heading-1"><span class="ftwp-text">1. Kinh nghiệm du lịch bãi biển Sơn Trà, Đà Nẵng</span></a><ol class="ftwp-sub"><li class="ftwp-item"><a class="ftwp-anchor" href="#ftoc-heading-2"><span class="ftwp-text">1.1. Sơn Trà ở đâu?</span></a></li><li class="ftwp-item"><a class="ftwp-anchor" href="#ftoc-heading-3"><span class="ftwp-text">1.2. Thời điểm thích hợp để đi du lịch bán đảo Sơn Trà</span></a></li><li class="ftwp-item"><a class="ftwp-anchor" href="#ftoc-heading-4"><span class="ftwp-text">1.3. Cách di chuyển đến bán đảo Sơn Trà</span></a></li></ol></li><li class="ftwp-item ftwp-has-sub ftwp-expand"><button type="button" aria-label="Expand or collapse" class="ftwp-icon-expand"></button><a class="ftwp-anchor" href="#ftoc-heading-5"><span class="ftwp-text">3. Địa điểm tham quan hấp dẫn tại bán đảo Sơn Trà Đà Nẵng</span></a><ol class="ftwp-sub"><li class="ftwp-item"><a class="ftwp-anchor" href="#ftoc-heading-6"><span class="ftwp-text">3.1. Chùa Linh Ứng</span></a></li><li class="ftwp-item"><a class="ftwp-anchor" href="#ftoc-heading-7"><span class="ftwp-text">3.2. Khu du lịch sinh thái Tiên Sa</span></a></li><li class="ftwp-item"><a class="ftwp-anchor" href="#ftoc-heading-8"><span class="ftwp-text">3.3. Đỉnh Bàn Cờ</span></a></li><li class="ftwp-item"><a class="ftwp-anchor" href="#ftoc-heading-9"><span class="ftwp-text">3.4. Cây đa ngàn năm</span></a></li><li class="ftwp-item"><a class="ftwp-anchor" href="#ftoc-heading-10"><span class="ftwp-text">3.5. Hải đăng Sơn Trà</span></a></li><li class="ftwp-item"><a class="ftwp-anchor" href="#ftoc-heading-11"><span class="ftwp-text">3.6. Trạm Rada 29</span></a></li><li class="ftwp-item"><a class="ftwp-anchor" href="#ftoc-heading-12"><span class="ftwp-text">3.7. Ghềnh Bàng</span></a></li><li class="ftwp-item"><a class="ftwp-anchor" href="#ftoc-heading-13"><span class="ftwp-text">3.8. Hồ Xanh</span></a></li><li class="ftwp-item"><a class="ftwp-anchor" href="#ftoc-heading-14"><span class="ftwp-text">3.8. Bãi Bụt, Bãi Rạng</span></a></li></ol></li><li class="ftwp-item ftwp-has-sub ftwp-expand"><button type="button" aria-label="Expand or collapse" class="ftwp-icon-expand"></button><a class="ftwp-anchor" href="#ftoc-heading-15"><span class="ftwp-text">4. Bán đảo Sơn Trà có gì chơi?</span></a><ol class="ftwp-sub"><li class="ftwp-item"><a class="ftwp-anchor" href="#ftoc-heading-16"><span class="ftwp-text">4.1. Tắm biển tại các bãi biển xinh đẹp</span></a></li><li class="ftwp-item"><a class="ftwp-anchor" href="#ftoc-heading-17"><span class="ftwp-text">4.2. Lặn ngắm san hô</span></a></li><li class="ftwp-item"><a class="ftwp-anchor" href="#ftoc-heading-18"><span class="ftwp-text">4.3. Chơi dù lượn</span></a></li><li class="ftwp-item"><a class="ftwp-anchor" href="#ftoc-heading-19"><span class="ftwp-text">4.4. Khám phá hệ động thực vật phong phú</span></a></li><li class="ftwp-item"><a class="ftwp-anchor" href="#ftoc-heading-20"><span class="ftwp-text">4.5. Trekking Mũi Nghê</span></a></li></ol></li><li class="ftwp-item ftwp-has-sub ftwp-expand"><button type="button" aria-label="Expand or collapse" class="ftwp-icon-expand"></button><a class="ftwp-anchor" href="#ftoc-heading-21"><span class="ftwp-text">5. Ẩm thực Sơn Trà đặc sắc kích thích vị giác</span></a><ol class="ftwp-sub"><li class="ftwp-item"><a class="ftwp-anchor" href="#ftoc-heading-22"><span class="ftwp-text">5.1. Hải sản</span></a></li><li class="ftwp-item"><a class="ftwp-anchor" href="#ftoc-heading-23"><span class="ftwp-text">5.2. Đặc sản núi rừng</span></a></li><li class="ftwp-item"><a class="ftwp-anchor" href="#ftoc-heading-24"><span class="ftwp-text">5.3. Rượu dừa</span></a></li></ol></li><li class="ftwp-item"><a class="ftwp-anchor" href="#ftoc-heading-25"><span class="ftwp-text">Kết luận</span></a></li></ol></nav></div></div>
+<div id="ftwp-postcontent"><p><em><span style="font-weight: 400;"><strong>Bán đảo Sơn Trà</strong>, hay còn gọi là núi Sơn Trà, là một khu vực tự nhiên độc đáo nằm ở phía Đông Bắc thành phố Đà Nẵng. Nơi đây nổi tiếng với hệ sinh thái phong phú, những bãi biển tuyệt đẹp và nhiều điểm tham quan hấp dẫn. Nếu bạn đang muốn tìm hiểu về bán đảo xinh đẹp này cho chuyến đi sắp tới, cùng bỏ túi ngay kinh nghiệm du lịch hữu ích dưới đây!</span></em></p>
+<h2 id="ftoc-heading-1" class="ftwp-heading"><b>1. Kinh nghiệm du lịch bãi biển Sơn Trà, Đà Nẵng</b></h2>
+<h3 id="ftoc-heading-2" class="ftwp-heading"><b>1.1. Sơn Trà ở đâu?</b></h3>
+<p><span style="font-weight: 400;">Bán đảo Sơn Trà nằm cách trung tâm thành phố Đà Nẵng khoảng 10 km về phía Đông Bắc, với diện tích khoảng 4.400 ha. Nơi đây có đường bờ biển dài khoảng 20 km, bao quanh là những bãi biển xinh đẹp và những điểm đến thú vị.​</span></p>
+<p style="text-align: center;"><img decoding="async" class="alignnone size-full wp-image-19182 entered lazyloaded" src="https://cdn.hoabinhevents.com/hbt/wp-content/uploads/2025/04/05084250/bai-bien-son-tra-voi-cat-trang-min-va-nuoc-bien-trong-xanh.jpg" alt="Bãi biển Sơn Trà với cát trắng mịn và nước biển trong xanh" width="900" height="600" data-lazy-srcset="https://cdn.hoabinhevents.com/hbt/wp-content/uploads/2025/04/05084250/bai-bien-son-tra-voi-cat-trang-min-va-nuoc-bien-trong-xanh.jpg 900w, https://cdn.hoabinhevents.com/hbt/wp-content/uploads/2025/04/05084250/bai-bien-son-tra-voi-cat-trang-min-va-nuoc-bien-trong-xanh-600x400.jpg 600w, https://cdn.hoabinhevents.com/hbt/wp-content/uploads/2025/04/05084250/bai-bien-son-tra-voi-cat-trang-min-va-nuoc-bien-trong-xanh-768x512.jpg 768w, https://cdn.hoabinhevents.com/hbt/wp-content/uploads/2025/04/05084250/bai-bien-son-tra-voi-cat-trang-min-va-nuoc-bien-trong-xanh-350x233.jpg 350w, https://cdn.hoabinhevents.com/hbt/wp-content/uploads/2025/04/05084250/bai-bien-son-tra-voi-cat-trang-min-va-nuoc-bien-trong-xanh-200x133.jpg 200w" data-lazy-sizes="(max-width: 900px) 100vw, 900px" data-lazy-src="https://cdn.hoabinhevents.com/hbt/wp-content/uploads/2025/04/05084250/bai-bien-son-tra-voi-cat-trang-min-va-nuoc-bien-trong-xanh.jpg" data-ll-status="loaded" sizes="(max-width: 900px) 100vw, 900px" srcset="https://cdn.hoabinhevents.com/hbt/wp-content/uploads/2025/04/05084250/bai-bien-son-tra-voi-cat-trang-min-va-nuoc-bien-trong-xanh.jpg 900w, https://cdn.hoabinhevents.com/hbt/wp-content/uploads/2025/04/05084250/bai-bien-son-tra-voi-cat-trang-min-va-nuoc-bien-trong-xanh-600x400.jpg 600w, https://cdn.hoabinhevents.com/hbt/wp-content/uploads/2025/04/05084250/bai-bien-son-tra-voi-cat-trang-min-va-nuoc-bien-trong-xanh-768x512.jpg 768w, https://cdn.hoabinhevents.com/hbt/wp-content/uploads/2025/04/05084250/bai-bien-son-tra-voi-cat-trang-min-va-nuoc-bien-trong-xanh-350x233.jpg 350w, https://cdn.hoabinhevents.com/hbt/wp-content/uploads/2025/04/05084250/bai-bien-son-tra-voi-cat-trang-min-va-nuoc-bien-trong-xanh-200x133.jpg 200w"><noscript><img decoding="async" class="alignnone size-full wp-image-19182" src="https://cdn.hoabinhevents.com/hbt/wp-content/uploads/2025/04/05084250/bai-bien-son-tra-voi-cat-trang-min-va-nuoc-bien-trong-xanh.jpg" alt="Bãi biển Sơn Trà với cát trắng mịn và nước biển trong xanh" width="900" height="600" srcset="https://cdn.hoabinhevents.com/hbt/wp-content/uploads/2025/04/05084250/bai-bien-son-tra-voi-cat-trang-min-va-nuoc-bien-trong-xanh.jpg 900w, https://cdn.hoabinhevents.com/hbt/wp-content/uploads/2025/04/05084250/bai-bien-son-tra-voi-cat-trang-min-va-nuoc-bien-trong-xanh-600x400.jpg 600w, https://cdn.hoabinhevents.com/hbt/wp-content/uploads/2025/04/05084250/bai-bien-son-tra-voi-cat-trang-min-va-nuoc-bien-trong-xanh-768x512.jpg 768w, https://cdn.hoabinhevents.com/hbt/wp-content/uploads/2025/04/05084250/bai-bien-son-tra-voi-cat-trang-min-va-nuoc-bien-trong-xanh-350x233.jpg 350w, https://cdn.hoabinhevents.com/hbt/wp-content/uploads/2025/04/05084250/bai-bien-son-tra-voi-cat-trang-min-va-nuoc-bien-trong-xanh-200x133.jpg 200w" sizes="(max-width: 900px) 100vw, 900px" /></noscript></p>
+<p style="text-align: center;"><i><span style="font-weight: 400;">Bãi biển Sơn Trà với cát trắng mịn và nước biển trong xanh, điểm đến lý tưởng cho kỳ nghỉ thư giãn.</span></i></p>
+<h3 id="ftoc-heading-3" class="ftwp-heading"><b>1.2. Thời điểm thích hợp để đi du lịch bán đảo Sơn Trà</b></h3>
+<p><span style="font-weight: 400;">Thời gian lý tưởng để du lịch bán đảo Sơn Trà là từ tháng 3 đến tháng 9, khi thời tiết khô ráo, biển lặng và thuận lợi cho các hoạt động ngoài trời. Từ tháng 10 đến tháng 2, khu vực này thường xuyên có mưa bão, ảnh hưởng đến trải nghiệm du lịch.</span></p>
+<h3 id="ftoc-heading-4" class="ftwp-heading"><b>1.3. Cách di chuyển đến bán đảo Sơn Trà</b></h3>
+<p><span style="font-weight: 400;">Từ trung tâm Đà Nẵng, bạn có thể di chuyển đến bán đảo Sơn Trà bằng xe máy hoặc ô tô. Có thể thuê xe tại các địa điểm cho thuê xe uy tín trong thành phố. Ngoài ra, HoaBinh Tourist cung cấp dịch vụ thuê xe du lịch trọn gói từ 7 – 45 chỗ, bao gồm cả xe limousine VIP đưa đón tận nơi, giúp bạn dễ dàng và thuận tiện hơn trong việc di chuyển.​</span></p>
+<p><span style="font-weight: 400;">Để khám phá trọn vẹn vẻ đẹp của bán đảo Sơn Trà và trải nghiệm những hoạt động thú vị, bạn có thể tham khảo các <a href="https://hoabinhtourist.com/du-lich-da-nang">tour du lịch Đà Nẵng</a> trọn gói mà HoaBinh Tourist cung cấp tại</span> <span style="font-weight: 400;">đây:</span></p>
+<p style="padding-left: 40px;"><em><a href="https://hoabinhtourist.com/da-nang-son-tra-hoi-an-ba-na-hills-ngu-hanh-son">Tour Đà Nẵng – Sơn Trà – Hội An – Bà Nà – Ngũ Hành Sơn 3N2Đ</a></em></p>
+<p style="padding-left: 40px;"><em><a href="https://hoabinhtourist.com/da-nang-son-tra-hoi-an-ba-na-hills-hue-4n3d">Tour Đà Nẵng – Sơn Trà – Hội An – Bà Nà – Huế – City 4N3Đ</a></em></p>
+<p style="padding-left: 40px;"><em><a href="https://hoabinhtourist.com/da-nang-son-tra-ba-na-hills-cu-lao-cham-4n3d">Tour Đà Nẵng – Sơn Trà – Hội An – Bà Nà – Cù Lao Chàm – City 4N3Đ</a></em></p>
+<p style="padding-left: 40px;"><em><a href="https://hoabinhtourist.com/da-nang-son-tra-hoi-an-ba-na-hills-nui-than-tai-city-tour">Tour Đà Nẵng – Sơn Trà – Hội An – Bà Nà – Núi Thần Tài – City 4N3Đ</a></em></p>
+<h2 id="ftoc-heading-5" class="ftwp-heading"><b>3. Địa điểm tham quan hấp dẫn tại bán đảo Sơn Trà Đà Nẵng</b></h2>
+<h3 id="ftoc-heading-6" class="ftwp-heading"><b>3.1. Chùa Linh Ứng</b></h3>
+<p><span style="font-weight: 400;"><a href="https://hoabinhtourist.com/cam-nang-du-lich/chua-linh-ung-son-tra">Chùa Linh Ứng Sơn Trà</a> nằm ở độ cao 693m so với mực nước biển, gần Bãi Bụt. Được biết đến với bức tượng Phật Quan Thế Âm cao 67m, tượng Phật cao nhất Việt Nam, nơi đây là điểm đến lý tưởng cho những ai tìm kiếm không gian thanh tịnh. Chùa Linh Ứng không chỉ là điểm tham quan tâm linh mà còn là nơi lý tưởng để ngắm nhìn toàn cảnh thành phố Đà Nẵng và bãi biển tuyệt đẹp từ trên cao.</span></p>
+<p style="text-align: center;"><img decoding="async" class="alignnone size-full wp-image-19180" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20900%20600'%3E%3C/svg%3E" alt="Chùa Linh Ứng uy nghiêm trên núi Sơn Trà" width="900" height="600" data-lazy-srcset="https://cdn.hoabinhevents.com/hbt/wp-content/uploads/2025/04/05084244/chua-linh-ung-uy-nghiem-tren-nui-son-tra.jpg 900w, https://cdn.hoabinhevents.com/hbt/wp-content/uploads/2025/04/05084244/chua-linh-ung-uy-nghiem-tren-nui-son-tra-600x400.jpg 600w, https://cdn.hoabinhevents.com/hbt/wp-content/uploads/2025/04/05084244/chua-linh-ung-uy-nghiem-tren-nui-son-tra-768x512.jpg 768w, https://cdn.hoabinhevents.com/hbt/wp-content/uploads/2025/04/05084244/chua-linh-ung-uy-nghiem-tren-nui-son-tra-350x233.jpg 350w, https://cdn.hoabinhevents.com/hbt/wp-content/uploads/2025/04/05084244/chua-linh-ung-uy-nghiem-tren-nui-son-tra-200x133.jpg 200w" data-lazy-sizes="(max-width: 900px) 100vw, 900px" data-lazy-src="https://cdn.hoabinhevents.com/hbt/wp-content/uploads/2025/04/05084244/chua-linh-ung-uy-nghiem-tren-nui-son-tra.jpg"><noscript><img decoding="async" class="alignnone size-full wp-image-19180" src="https://cdn.hoabinhevents.com/hbt/wp-content/uploads/2025/04/05084244/chua-linh-ung-uy-nghiem-tren-nui-son-tra.jpg" alt="Chùa Linh Ứng uy nghiêm trên núi Sơn Trà" width="900" height="600" srcset="https://cdn.hoabinhevents.com/hbt/wp-content/uploads/2025/04/05084244/chua-linh-ung-uy-nghiem-tren-nui-son-tra.jpg 900w, https://cdn.hoabinhevents.com/hbt/wp-content/uploads/2025/04/05084244/chua-linh-ung-uy-nghiem-tren-nui-son-tra-600x400.jpg 600w, https://cdn.hoabinhevents.com/hbt/wp-content/uploads/2025/04/05084244/chua-linh-ung-uy-nghiem-tren-nui-son-tra-768x512.jpg 768w, https://cdn.hoabinhevents.com/hbt/wp-content/uploads/2025/04/05084244/chua-linh-ung-uy-nghiem-tren-nui-son-tra-350x233.jpg 350w, https://cdn.hoabinhevents.com/hbt/wp-content/uploads/2025/04/05084244/chua-linh-ung-uy-nghiem-tren-nui-son-tra-200x133.jpg 200w" sizes="(max-width: 900px) 100vw, 900px" /></noscript></p>
+<p style="text-align: center;"><i><span style="font-weight: 400;">Chùa Linh Ứng uy nghiêm trên núi Sơn Trà, nơi tâm linh hòa quyện cùng thiên nhiên hùng vĩ.</span></i></p>
+<h3 id="ftoc-heading-7" class="ftwp-heading"><b>3.2. Khu du lịch sinh thái Tiên Sa</b></h3>
+<p><span style="font-weight: 400;">Nằm ở chân cảng Tiên Sa, </span><b>Khu du lịch Tiên Sa</b><span style="font-weight: 400;"> là nơi lý tưởng để thư giãn và thưởng thức cảnh sắc thiên nhiên tuyệt vời. Với bãi biển trong xanh và bãi cát trắng mịn, Tiên Sa còn nổi tiếng với câu chuyện về những nàng tiên giáng trần, tạo nên một không gian vừa lãng mạn vừa huyền bí. Đây là điểm đến thích hợp cho các chuyến tham quan và dã ngoại gia đình.</span></p>
+<h3 id="ftoc-heading-8" class="ftwp-heading"><b>3.3. Đỉnh Bàn Cờ</b></h3>
+<p><b>Đỉnh Bàn Cờ</b><span style="font-weight: 400;"> nằm ở độ cao 700m so với mực nước biển, là một trong những điểm ngắm toàn cảnh Đà Nẵng đẹp nhất. Để lên đỉnh, du khách sẽ đi bộ qua khu rừng xanh mát, cảm nhận không khí trong lành, thư giãn giữa thiên nhiên. Từ đỉnh Bàn Cờ, bạn có thể phóng tầm mắt ngắm nhìn thành phố Đà Nẵng, bán đảo Sơn Trà và biển cả mênh mông.</span></p>
+<p style="text-align: center;"><img decoding="async" class="alignnone size-full wp-image-19179" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20900%20600'%3E%3C/svg%3E" alt="Đứng trên Đỉnh Bàn Cờ" width="900" height="600" data-lazy-srcset="https://cdn.hoabinhevents.com/hbt/wp-content/uploads/2025/04/05084242/dung-tren-dinh-ban-co.jpg 900w, https://cdn.hoabinhevents.com/hbt/wp-content/uploads/2025/04/05084242/dung-tren-dinh-ban-co-600x400.jpg 600w, https://cdn.hoabinhevents.com/hbt/wp-content/uploads/2025/04/05084242/dung-tren-dinh-ban-co-768x512.jpg 768w, https://cdn.hoabinhevents.com/hbt/wp-content/uploads/2025/04/05084242/dung-tren-dinh-ban-co-350x233.jpg 350w, https://cdn.hoabinhevents.com/hbt/wp-content/uploads/2025/04/05084242/dung-tren-dinh-ban-co-200x133.jpg 200w" data-lazy-sizes="(max-width: 900px) 100vw, 900px" data-lazy-src="https://cdn.hoabinhevents.com/hbt/wp-content/uploads/2025/04/05084242/dung-tren-dinh-ban-co.jpg"><noscript><img decoding="async" class="alignnone size-full wp-image-19179" src="https://cdn.hoabinhevents.com/hbt/wp-content/uploads/2025/04/05084242/dung-tren-dinh-ban-co.jpg" alt="Đứng trên Đỉnh Bàn Cờ" width="900" height="600" srcset="https://cdn.hoabinhevents.com/hbt/wp-content/uploads/2025/04/05084242/dung-tren-dinh-ban-co.jpg 900w, https://cdn.hoabinhevents.com/hbt/wp-content/uploads/2025/04/05084242/dung-tren-dinh-ban-co-600x400.jpg 600w, https://cdn.hoabinhevents.com/hbt/wp-content/uploads/2025/04/05084242/dung-tren-dinh-ban-co-768x512.jpg 768w, https://cdn.hoabinhevents.com/hbt/wp-content/uploads/2025/04/05084242/dung-tren-dinh-ban-co-350x233.jpg 350w, https://cdn.hoabinhevents.com/hbt/wp-content/uploads/2025/04/05084242/dung-tren-dinh-ban-co-200x133.jpg 200w" sizes="(max-width: 900px) 100vw, 900px" /></noscript></p>
+<p style="text-align: center;"><i><span style="font-weight: 400;">Đứng trên Đỉnh Bàn Cờ, ngắm toàn cảnh Đà Nẵng thơ mộng dưới chân mây.</span></i></p>
+<h3 id="ftoc-heading-9" class="ftwp-heading"><b>3.4. Cây đa ngàn năm</b></h3>
+<p><b>Cây đa ngàn năm</b><span style="font-weight: 400;"> nằm trên đường biển Hoàng Sa, là một trong những biểu tượng nổi bật của Sơn Trà. Với tán lá rộng lớn và hình dáng độc đáo, cây đa này được coi là chứng nhân của lịch sử, tồn tại giữa rừng xanh bạt ngàn. Đây là điểm lý tưởng để du khách đến tham quan và tìm hiểu về sự sống bất diệt giữa thiên nhiên.</span></p>
+<p style="text-align: center;"><img decoding="async" class="alignnone size-full wp-image-19174" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20900%20600'%3E%3C/svg%3E" alt="rừng xanh Sơn Trà" width="900" height="600" data-lazy-srcset="https://cdn.hoabinhevents.com/hbt/wp-content/uploads/2025/04/05084227/rung-xanh-son-tra.jpg 900w, https://cdn.hoabinhevents.com/hbt/wp-content/uploads/2025/04/05084227/rung-xanh-son-tra-600x400.jpg 600w, https://cdn.hoabinhevents.com/hbt/wp-content/uploads/2025/04/05084227/rung-xanh-son-tra-768x512.jpg 768w, https://cdn.hoabinhevents.com/hbt/wp-content/uploads/2025/04/05084227/rung-xanh-son-tra-350x233.jpg 350w, https://cdn.hoabinhevents.com/hbt/wp-content/uploads/2025/04/05084227/rung-xanh-son-tra-200x133.jpg 200w" data-lazy-sizes="(max-width: 900px) 100vw, 900px" data-lazy-src="https://cdn.hoabinhevents.com/hbt/wp-content/uploads/2025/04/05084227/rung-xanh-son-tra.jpg"><noscript><img decoding="async" class="alignnone size-full wp-image-19174" src="https://cdn.hoabinhevents.com/hbt/wp-content/uploads/2025/04/05084227/rung-xanh-son-tra.jpg" alt="rừng xanh Sơn Trà" width="900" height="600" srcset="https://cdn.hoabinhevents.com/hbt/wp-content/uploads/2025/04/05084227/rung-xanh-son-tra.jpg 900w, https://cdn.hoabinhevents.com/hbt/wp-content/uploads/2025/04/05084227/rung-xanh-son-tra-600x400.jpg 600w, https://cdn.hoabinhevents.com/hbt/wp-content/uploads/2025/04/05084227/rung-xanh-son-tra-768x512.jpg 768w, https://cdn.hoabinhevents.com/hbt/wp-content/uploads/2025/04/05084227/rung-xanh-son-tra-350x233.jpg 350w, https://cdn.hoabinhevents.com/hbt/wp-content/uploads/2025/04/05084227/rung-xanh-son-tra-200x133.jpg 200w" sizes="(max-width: 900px) 100vw, 900px" /></noscript></p>
+<p style="text-align: center;"><i><span style="font-weight: 400;">Cây đa ngàn năm tuổi với tán lá rộng lớn, chứng nhân lịch sử giữa rừng xanh Sơn Trà.</span></i></p>
+<h3 id="ftoc-heading-10" class="ftwp-heading"><b>3.5. Hải đăng Sơn Trà</b></h3>
+<p><b>Hải đăng Sơn Trà</b><span style="font-weight: 400;"> nằm trên bán đảo cùng tên và gần các điểm du lịch nổi tiếng như </span><b>Chùa Linh Ứng</b><span style="font-weight: 400;"> và </span><b>Ghềnh Bàng</b><span style="font-weight: 400;">. Nơi đây còn được gọi là “con mắt đêm”, đóng vai trò quan trọng trong việc dẫn dắt tàu thuyền trên biển. Hải đăng này cũng là một địa điểm lý tưởng để du khách chụp hình, ngắm biển và tham gia các hoạt động ngắm cảnh.</span></p>
+<h3 id="ftoc-heading-11" class="ftwp-heading"><b>3.6. Trạm Rada 29</b></h3>
+<p><b>Trạm Rada 29</b><span style="font-weight: 400;"> là điểm tham quan độc đáo, nằm trên đỉnh Sơn Trà. Đây từng là căn cứ quân sự có kiến trúc đặc biệt, được xây dựng trong thời kỳ chiến tranh. Với tầm nhìn đẹp từ trên cao, Trạm Rada 29 hiện nay thu hút không chỉ những người yêu lịch sử mà còn những du khách tìm kiếm sự kỳ bí, mới lạ trong hành trình khám phá Sơn Trà.</span></p>
+<h3 id="ftoc-heading-12" class="ftwp-heading"><b>3.7. Ghềnh Bàng</b></h3>
+<p><b>Ghềnh Bàng</b><span style="font-weight: 400;"> là bãi đá tự nhiên với những tảng đá lớn nhỏ xếp chồng lên nhau, tạo nên một khung cảnh độc đáo và hoang sơ. Biển ở Ghềnh Bàng có nước trong xanh và cát trắng mịn, rất thích hợp cho các hoạt động như tắm biển và chụp ảnh. Đây là một điểm đến yêu thích của những ai tìm kiếm một không gian yên bình, tĩnh lặng.</span></p>
+<p style="text-align: center;"><img decoding="async" class="alignnone size-full wp-image-19178" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20900%20600'%3E%3C/svg%3E" alt="Ghềnh Bàng hoang sơ với những khối đá kỳ vĩ" width="900" height="600" data-lazy-srcset="https://cdn.hoabinhevents.com/hbt/wp-content/uploads/2025/04/05084239/ghenh-bang-hoang-so-voi-nhung-khoi-da-ky-vi.jpg 900w, https://cdn.hoabinhevents.com/hbt/wp-content/uploads/2025/04/05084239/ghenh-bang-hoang-so-voi-nhung-khoi-da-ky-vi-600x400.jpg 600w, https://cdn.hoabinhevents.com/hbt/wp-content/uploads/2025/04/05084239/ghenh-bang-hoang-so-voi-nhung-khoi-da-ky-vi-768x512.jpg 768w, https://cdn.hoabinhevents.com/hbt/wp-content/uploads/2025/04/05084239/ghenh-bang-hoang-so-voi-nhung-khoi-da-ky-vi-350x233.jpg 350w, https://cdn.hoabinhevents.com/hbt/wp-content/uploads/2025/04/05084239/ghenh-bang-hoang-so-voi-nhung-khoi-da-ky-vi-200x133.jpg 200w" data-lazy-sizes="(max-width: 900px) 100vw, 900px" data-lazy-src="https://cdn.hoabinhevents.com/hbt/wp-content/uploads/2025/04/05084239/ghenh-bang-hoang-so-voi-nhung-khoi-da-ky-vi.jpg"><noscript><img decoding="async" class="alignnone size-full wp-image-19178" src="https://cdn.hoabinhevents.com/hbt/wp-content/uploads/2025/04/05084239/ghenh-bang-hoang-so-voi-nhung-khoi-da-ky-vi.jpg" alt="Ghềnh Bàng hoang sơ với những khối đá kỳ vĩ" width="900" height="600" srcset="https://cdn.hoabinhevents.com/hbt/wp-content/uploads/2025/04/05084239/ghenh-bang-hoang-so-voi-nhung-khoi-da-ky-vi.jpg 900w, https://cdn.hoabinhevents.com/hbt/wp-content/uploads/2025/04/05084239/ghenh-bang-hoang-so-voi-nhung-khoi-da-ky-vi-600x400.jpg 600w, https://cdn.hoabinhevents.com/hbt/wp-content/uploads/2025/04/05084239/ghenh-bang-hoang-so-voi-nhung-khoi-da-ky-vi-768x512.jpg 768w, https://cdn.hoabinhevents.com/hbt/wp-content/uploads/2025/04/05084239/ghenh-bang-hoang-so-voi-nhung-khoi-da-ky-vi-350x233.jpg 350w, https://cdn.hoabinhevents.com/hbt/wp-content/uploads/2025/04/05084239/ghenh-bang-hoang-so-voi-nhung-khoi-da-ky-vi-200x133.jpg 200w" sizes="(max-width: 900px) 100vw, 900px" /></noscript></p>
+<p style="text-align: center;"><i><span style="font-weight: 400;">Ghềnh Bàng hoang sơ với những khối đá kỳ vĩ, điểm</span></i><i><span style="font-weight: 400;"> đến hấp dẫn cho người yêu thiên nhiên.</span></i></p>
+<h3 id="ftoc-heading-13" class="ftwp-heading"><b>3.8. Hồ Xanh</b></h3>
+<p><b>Hồ Xanh</b><span style="font-weight: 400;"> là một hồ nước ngọt nằm giữa khu rừng nguyên sinh, được bao quanh bởi cảnh sắc thiên nhiên hoang sơ và trong lành. Nước hồ trong veo, với không gian yên tĩnh, là nơi lý tưởng để nghỉ ngơi, thư giãn sau những chuyến trekking, hoặc đơn giản là ngồi lặng yên, tận hưởng vẻ đẹp của thiên nhiên.</span></p>
+<p style="text-align: center;"><img decoding="async" class="alignnone size-full wp-image-19177" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20900%20600'%3E%3C/svg%3E" alt="Hồ Xanh như viên ngọc bích giữa lòng Sơn Trà" width="900" height="600" data-lazy-srcset="https://cdn.hoabinhevents.com/hbt/wp-content/uploads/2025/04/05084237/ho-xanh-nhu-vien-ngoc-bich-giua-long-son-tra.jpg 900w, https://cdn.hoabinhevents.com/hbt/wp-content/uploads/2025/04/05084237/ho-xanh-nhu-vien-ngoc-bich-giua-long-son-tra-600x400.jpg 600w, https://cdn.hoabinhevents.com/hbt/wp-content/uploads/2025/04/05084237/ho-xanh-nhu-vien-ngoc-bich-giua-long-son-tra-768x512.jpg 768w, https://cdn.hoabinhevents.com/hbt/wp-content/uploads/2025/04/05084237/ho-xanh-nhu-vien-ngoc-bich-giua-long-son-tra-350x233.jpg 350w, https://cdn.hoabinhevents.com/hbt/wp-content/uploads/2025/04/05084237/ho-xanh-nhu-vien-ngoc-bich-giua-long-son-tra-200x133.jpg 200w" data-lazy-sizes="(max-width: 900px) 100vw, 900px" data-lazy-src="https://cdn.hoabinhevents.com/hbt/wp-content/uploads/2025/04/05084237/ho-xanh-nhu-vien-ngoc-bich-giua-long-son-tra.jpg"><noscript><img decoding="async" class="alignnone size-full wp-image-19177" src="https://cdn.hoabinhevents.com/hbt/wp-content/uploads/2025/04/05084237/ho-xanh-nhu-vien-ngoc-bich-giua-long-son-tra.jpg" alt="Hồ Xanh như viên ngọc bích giữa lòng Sơn Trà" width="900" height="600" srcset="https://cdn.hoabinhevents.com/hbt/wp-content/uploads/2025/04/05084237/ho-xanh-nhu-vien-ngoc-bich-giua-long-son-tra.jpg 900w, https://cdn.hoabinhevents.com/hbt/wp-content/uploads/2025/04/05084237/ho-xanh-nhu-vien-ngoc-bich-giua-long-son-tra-600x400.jpg 600w, https://cdn.hoabinhevents.com/hbt/wp-content/uploads/2025/04/05084237/ho-xanh-nhu-vien-ngoc-bich-giua-long-son-tra-768x512.jpg 768w, https://cdn.hoabinhevents.com/hbt/wp-content/uploads/2025/04/05084237/ho-xanh-nhu-vien-ngoc-bich-giua-long-son-tra-350x233.jpg 350w, https://cdn.hoabinhevents.com/hbt/wp-content/uploads/2025/04/05084237/ho-xanh-nhu-vien-ngoc-bich-giua-long-son-tra-200x133.jpg 200w" sizes="(max-width: 900px) 100vw, 900px" /></noscript></p>
+<p style="text-align: center;"><i><span style="font-weight: 400;">Hồ Xanh như viên ngọc bích giữa lòng Sơn Trà, phản chiếu bầu trời trong veo.</span></i></p>
+<h3 id="ftoc-heading-14" class="ftwp-heading"><b>3.8. Bãi Bụt, Bãi Rạng</b></h3>
+<p><b>Bãi Bụt</b><span style="font-weight: 400;"> và </span><b>Bãi Rạng</b><span style="font-weight: 400;"> là hai bãi biển nhỏ nhưng rất đẹp, với cát trắng mịn và nước biển trong xanh. Đây là những bãi tắm lý tưởng cho những ai muốn tìm một nơi thư giãn, tắm biển hoặc tổ chức các buổi picnic ngoài trời. Đặc biệt, Bãi Bụt còn gần với </span><b>Chùa Linh Ứng</b><span style="font-weight: 400;">, tạo ra một không gian hài hòa giữa cảnh quan thiên nhiên và không gian tâm linh.</span></p>
+<p><span style="font-weight: 400;">Với những địa điểm tham quan đầy ấn tượng này, </span><b>bán đảo Sơn Trà</b><span style="font-weight: 400;"> chắc chắn sẽ là điểm đến lý tưởng cho kỳ nghỉ của bạn. Để chuyến đi trở nên thuận tiện và thoải mái hơn, </span><b>HoaBinh Tourist</b><span style="font-weight: 400;"> cung cấp các tour du lịch Đà Nẵng trọn gói, bao gồm các dịch vụ thuê</span> <span style="font-weight: 400;">xe du lịch, đặt vé máy bay và nghỉ dưỡng cao cấp tại các resort 5 sao.</span></p>
+<h2 id="ftoc-heading-15" class="ftwp-heading"><b>4. Bán đảo Sơn Trà có gì chơi?</b></h2>
+<p><span style="font-weight: 400;">Bán đảo Sơn Trà không chỉ nổi tiếng với cảnh quan thiên nhiên tuyệt đẹp mà còn thu hút du khách bởi nhiều hoạt động giải trí thú vị. Dưới đây là một số trải nghiệm bạn không nên bỏ qua khi ghé thăm:</span></p>
+<h3 id="ftoc-heading-16" class="ftwp-heading"><b>4.1. Tắm biển tại các bãi biển xinh đẹp</b></h3>
+<p><span style="font-weight: 400;">Bán đảo Sơn Trà sở hữu nhiều bãi biển trong xanh như Bãi Bụt và Bãi Tiên Sa. Tại Bãi Bụt, du khách có thể tham gia các hoạt động như thuê chòi, tổ chức ăn uống bên bờ biển, chơi các trò chơi biển, lặn ngắm san hô hay lướt ván, nhảy dù.</span></p>
+<p style="text-align: center;"><img decoding="async" class="alignnone size-full wp-image-19181" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20900%20600'%3E%3C/svg%3E" alt="biển tuyệt đẹp của Sơn Trà" width="900" height="600" data-lazy-srcset="https://cdn.hoabinhevents.com/hbt/wp-content/uploads/2025/04/05084247/bien-tuyet-dep-cua-son-tra.jpg 900w, https://cdn.hoabinhevents.com/hbt/wp-content/uploads/2025/04/05084247/bien-tuyet-dep-cua-son-tra-600x400.jpg 600w, https://cdn.hoabinhevents.com/hbt/wp-content/uploads/2025/04/05084247/bien-tuyet-dep-cua-son-tra-768x512.jpg 768w, https://cdn.hoabinhevents.com/hbt/wp-content/uploads/2025/04/05084247/bien-tuyet-dep-cua-son-tra-350x233.jpg 350w, https://cdn.hoabinhevents.com/hbt/wp-content/uploads/2025/04/05084247/bien-tuyet-dep-cua-son-tra-200x133.jpg 200w" data-lazy-sizes="(max-width: 900px) 100vw, 900px" data-lazy-src="https://cdn.hoabinhevents.com/hbt/wp-content/uploads/2025/04/05084247/bien-tuyet-dep-cua-son-tra.jpg"><noscript><img decoding="async" class="alignnone size-full wp-image-19181" src="https://cdn.hoabinhevents.com/hbt/wp-content/uploads/2025/04/05084247/bien-tuyet-dep-cua-son-tra.jpg" alt="biển tuyệt đẹp của Sơn Trà" width="900" height="600" srcset="https://cdn.hoabinhevents.com/hbt/wp-content/uploads/2025/04/05084247/bien-tuyet-dep-cua-son-tra.jpg 900w, https://cdn.hoabinhevents.com/hbt/wp-content/uploads/2025/04/05084247/bien-tuyet-dep-cua-son-tra-600x400.jpg 600w, https://cdn.hoabinhevents.com/hbt/wp-content/uploads/2025/04/05084247/bien-tuyet-dep-cua-son-tra-768x512.jpg 768w, https://cdn.hoabinhevents.com/hbt/wp-content/uploads/2025/04/05084247/bien-tuyet-dep-cua-son-tra-350x233.jpg 350w, https://cdn.hoabinhevents.com/hbt/wp-content/uploads/2025/04/05084247/bien-tuyet-dep-cua-son-tra-200x133.jpg 200w" sizes="(max-width: 900px) 100vw, 900px" /></noscript></p>
+<p style="text-align: center;"><i><span style="font-weight: 400;">Đắm mình trong làn nước mát lạnh tại những bãi biển tuyệt đẹp của Sơn Trà.</span></i></p>
+<h3 id="ftoc-heading-17" class="ftwp-heading"><b>4.2. Lặn ngắm san hô</b></h3>
+<p><span style="font-weight: 400;">Hoạt động lặn biển tại Sơn Trà cho phép du khách khám phá thế giới đại dương với những rạn san hô đa dạng và sinh động. Một tour lặn biển bao gồm cano, hướng dẫn viên và bữa ăn hải sản trên biển.</span></p>
+<h3 id="ftoc-heading-18" class="ftwp-heading"><b>4.3. Chơi dù lượn</b></h3>
+<p><span style="font-weight: 400;">Trải nghiệm dù lượn tại Sơn Trà mang lại cảm giác mạnh mẽ khi bay từ đỉnh Bàn Cờ xuống Bãi Mân Thái. Hoạt động này giúp du khách chiêm ngưỡng toàn cảnh núi rừng và biển cả từ trên cao.</span></p>
+<p style="text-align: center;"><img decoding="async" class="alignnone size-full wp-image-19175" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20900%20600'%3E%3C/svg%3E" alt="ngắm nhìn Sơn Trà từ độ cao lý tưởng" width="900" height="600" data-lazy-srcset="https://cdn.hoabinhevents.com/hbt/wp-content/uploads/2025/04/05084231/ngam-nhin-son-tra-tu-do-cao-ly-tuong.jpg 900w, https://cdn.hoabinhevents.com/hbt/wp-content/uploads/2025/04/05084231/ngam-nhin-son-tra-tu-do-cao-ly-tuong-600x400.jpg 600w, https://cdn.hoabinhevents.com/hbt/wp-content/uploads/2025/04/05084231/ngam-nhin-son-tra-tu-do-cao-ly-tuong-768x512.jpg 768w, https://cdn.hoabinhevents.com/hbt/wp-content/uploads/2025/04/05084231/ngam-nhin-son-tra-tu-do-cao-ly-tuong-350x233.jpg 350w, https://cdn.hoabinhevents.com/hbt/wp-content/uploads/2025/04/05084231/ngam-nhin-son-tra-tu-do-cao-ly-tuong-200x133.jpg 200w" data-lazy-sizes="(max-width: 900px) 100vw, 900px" data-lazy-src="https://cdn.hoabinhevents.com/hbt/wp-content/uploads/2025/04/05084231/ngam-nhin-son-tra-tu-do-cao-ly-tuong.jpg"><noscript><img decoding="async" class="alignnone size-full wp-image-19175" src="https://cdn.hoabinhevents.com/hbt/wp-content/uploads/2025/04/05084231/ngam-nhin-son-tra-tu-do-cao-ly-tuong.jpg" alt="ngắm nhìn Sơn Trà từ độ cao lý tưởng" width="900" height="600" srcset="https://cdn.hoabinhevents.com/hbt/wp-content/uploads/2025/04/05084231/ngam-nhin-son-tra-tu-do-cao-ly-tuong.jpg 900w, https://cdn.hoabinhevents.com/hbt/wp-content/uploads/2025/04/05084231/ngam-nhin-son-tra-tu-do-cao-ly-tuong-600x400.jpg 600w, https://cdn.hoabinhevents.com/hbt/wp-content/uploads/2025/04/05084231/ngam-nhin-son-tra-tu-do-cao-ly-tuong-768x512.jpg 768w, https://cdn.hoabinhevents.com/hbt/wp-content/uploads/2025/04/05084231/ngam-nhin-son-tra-tu-do-cao-ly-tuong-350x233.jpg 350w, https://cdn.hoabinhevents.com/hbt/wp-content/uploads/2025/04/05084231/ngam-nhin-son-tra-tu-do-cao-ly-tuong-200x133.jpg 200w" sizes="(max-width: 900px) 100vw, 900px" /></noscript></p>
+<p style="text-align: center;"><i><span style="font-weight: 400;">Trải nghiệm cảm giác bay lượn tự do trên không, ngắm nhìn Sơn Trà từ độ cao lý tưởng.</span></i></p>
+<h3 id="ftoc-heading-19" class="ftwp-heading"><b>4.4. Khám phá hệ động thực vật phong phú</b></h3>
+<p><span style="font-weight: 400;">Sơn Trà là nơi sinh sống của nhiều loài động thực vật quý hiếm. Du khách có thể tham gia các tour khám phá rừng nguyên sinh, tìm hiểu về hệ sinh thái phong phú và đa dạng của khu vực.</span></p>
+<h3 id="ftoc-heading-20" class="ftwp-heading"><b>4.5. Trekking Mũi Nghê</b></h3>
+<p><span style="font-weight: 400;">Đối với những ai yêu thích trekking, hành trình đến Mũi Nghê sẽ là thử thách thú vị. Đây là nơi bạn có thể chiêm ngưỡng vẻ đẹp hoang sơ của thiên nhiên và tận hưởng không khí trong lành.​</span></p>
+<h2 id="ftoc-heading-21" class="ftwp-heading"><b>5. Ẩm thực Sơn Trà đặc sắc kích thích vị giác</b></h2>
+<h3 id="ftoc-heading-22" class="ftwp-heading"><b>5.1. Hải sản</b></h3>
+<p><span style="font-weight: 400;">Bán đảo Sơn Trà nổi tiếng với những bãi biển tuyệt đẹp và hệ sinh thái biển phong phú, tạo điều kiện lý tưởng cho việc thưởng thức hải sản tươi ngon. Tại đây, du khách có thể tìm thấy nhiều nhà hàng hải sản nổi tiếng như Hải sản Phố Đà Nẵng, Hải sản Lão Đại, Nhà hàng hải sản Bé Anh, Hải sản Mộc Quán và Hải sản Năm Đảnh. Những địa điểm này được đánh giá cao về chất lượng món ăn và dịch vụ.</span></p>
+<p style="text-align: center;"><img decoding="async" class="alignnone size-full wp-image-19176" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20900%20600'%3E%3C/svg%3E" alt="hương vị độc đáo của ẩm thực Sơn Trà" width="900" height="600" data-lazy-srcset="https://cdn.hoabinhevents.com/hbt/wp-content/uploads/2025/04/05084233/huong-vi-doc-dao-cua-am-thuc-son-tra.jpg 900w, https://cdn.hoabinhevents.com/hbt/wp-content/uploads/2025/04/05084233/huong-vi-doc-dao-cua-am-thuc-son-tra-600x400.jpg 600w, https://cdn.hoabinhevents.com/hbt/wp-content/uploads/2025/04/05084233/huong-vi-doc-dao-cua-am-thuc-son-tra-768x512.jpg 768w, https://cdn.hoabinhevents.com/hbt/wp-content/uploads/2025/04/05084233/huong-vi-doc-dao-cua-am-thuc-son-tra-350x233.jpg 350w, https://cdn.hoabinhevents.com/hbt/wp-content/uploads/2025/04/05084233/huong-vi-doc-dao-cua-am-thuc-son-tra-200x133.jpg 200w" data-lazy-sizes="(max-width: 900px) 100vw, 900px" data-lazy-src="https://cdn.hoabinhevents.com/hbt/wp-content/uploads/2025/04/05084233/huong-vi-doc-dao-cua-am-thuc-son-tra.jpg"><noscript><img decoding="async" class="alignnone size-full wp-image-19176" src="https://cdn.hoabinhevents.com/hbt/wp-content/uploads/2025/04/05084233/huong-vi-doc-dao-cua-am-thuc-son-tra.jpg" alt="hương vị độc đáo của ẩm thực Sơn Trà" width="900" height="600" srcset="https://cdn.hoabinhevents.com/hbt/wp-content/uploads/2025/04/05084233/huong-vi-doc-dao-cua-am-thuc-son-tra.jpg 900w, https://cdn.hoabinhevents.com/hbt/wp-content/uploads/2025/04/05084233/huong-vi-doc-dao-cua-am-thuc-son-tra-600x400.jpg 600w, https://cdn.hoabinhevents.com/hbt/wp-content/uploads/2025/04/05084233/huong-vi-doc-dao-cua-am-thuc-son-tra-768x512.jpg 768w, https://cdn.hoabinhevents.com/hbt/wp-content/uploads/2025/04/05084233/huong-vi-doc-dao-cua-am-thuc-son-tra-350x233.jpg 350w, https://cdn.hoabinhevents.com/hbt/wp-content/uploads/2025/04/05084233/huong-vi-doc-dao-cua-am-thuc-son-tra-200x133.jpg 200w" sizes="(max-width: 900px) 100vw, 900px" /></noscript></p>
+<p style="text-align: center;"><i><span style="font-weight: 400;">Thưởng thức hương vị độc đáo của ẩm thực Sơn Trà, nơi giao thoa giữa biển cả và núi rừng.</span></i></p>
+<h3 id="ftoc-heading-23" class="ftwp-heading"><b>5.2. Đặc sản núi rừng</b></h3>
+<p><span style="font-weight: 400;">Ngoài hải sản, Sơn Trà còn nổi tiếng với các đặc sản núi rừng độc đáo. Du khách có thể tìm thấy các loại thảo mộc, quả và nấm quý, được sử dụng trong nhiều món ăn truyền thống. Những nguyên liệu này không chỉ mang lại hương vị đặc biệt mà còn có giá trị dinh dưỡng cao.​</span></p>
+<h3 id="ftoc-heading-24" class="ftwp-heading"><b>5.3. Rượu dừa</b></h3>
+<p><span style="font-weight: 400;">Rượu dừa là một thức uống độc đáo của Sơn Trà, được chế biến từ dừa tươi kết hợp với các loại rượu truyền thống. Thức uống này có vị ngọt thanh, thơm mát và thường được dùng kèm với các món ăn địa phương, tạo nên trải nghiệm ẩm thực thú vị cho du khách.​</span></p>
+<p style="padding-left: 40px;"><strong><em>&gt;&gt; Xem thêm: <a href="https://hoabinhtourist.com/cam-nang-du-lich/ba-na-hill-da-nang">Khám phá Bà Nà Hills Đà Nẵng – Xứ sở trên mây diệu kỳ</a></em></strong></p>
+<h2 id="ftoc-heading-25" class="ftwp-heading"><b>Kết luận</b></h2>
+<p><span style="font-weight: 400;">Bán đảo Sơn Trà không chỉ thu hút du khách bởi vẻ đẹp thiên nhiên hoang sơ mà còn bởi nền ẩm thực phong phú, đa dạng. Nếu bạn đang tìm kiếm một địa điểm để khám phá và trải nghiệm, Sơn Trà chắc chắn sẽ không làm bạn thất vọng. Để chuyến đi của bạn trở nên hoàn hảo, HoaBinh Tourist cung cấp các tour <a href="https://hoabinhtourist.com/cam-nang-du-lich/du-lich-da-nang-hoi-an">du lịch Đà Nẵng Hội An</a> trọn gói, bao gồm:​</span></p>
+<ul>
+<li style="font-weight: 400;" aria-level="1"><b>Thuê xe du lịch</b><span style="font-weight: 400;">: Chúng tôi cung cấp dịch vụ thuê xe từ 7 đến 45 chỗ, bao gồm cả xe limousine VIP, đảm bảo sự thoải mái và tiện nghi cho chuyến đi của bạn.​</span></li>
+<li style="font-weight: 400;" aria-level="1"><b>Đặt vé máy bay</b><span style="font-weight: 400;">: Với dịch vụ đặt vé nhanh chóng, linh hoạt và giá cả phải chăng, bạn có thể dễ dàng lên kế hoạch cho chuyến du lịch của mình.​</span></li>
+<li style="font-weight: 400;" aria-level="1"><b>Nghỉ dưỡng cao cấp</b><span style="font-weight: 400;">: HoaBinh Tourist hợp tác với các resort và khách sạn 5 sao, mang đến cho bạn trải nghiệm nghỉ dưỡng tuyệt vời sau những ngày khám phá.​</span></li>
+</ul>
+<p>Hy vọng bạn sẽ có chuyến đi đến Bán đảo Sơn Trà vui vẻ, ý nghĩa!</p>
+</div></div>
+</article>
+
+							
+												<!--<div class="prev-link">&laquo; <a href="https://hoabinhtourist.com/cam-nang-du-lich/dac-san-cua-lo" rel="prev">20+ đặc sản Cửa Lò “gây thương nhớ” cho mọi du khách</a></div>
+						<div class="next-link"><a href="https://hoabinhtourist.com/cam-nang-du-lich/chua-linh-ung-son-tra" rel="next">Chùa Linh Ứng Sơn Trà: Hành trình về với cội nguồn tâm linh Đà Nẵng</a> &raquo;</div>-->
+
+						<p>&nbsp;</p>
+						<!--<style type="text/css">
+							.boxReview{ border-radius: 10px;box-shadow: 0 1px 2px 0 rgba(60,64,67,.1), 0 2px 6px 2px rgba(60,64,67,.15);margin-bottom: 15px;width: 100%;padding: 0px 15px; }
+							.is-flex{ display: flex; }
+							.is-align-items-center{ width: 100%; }
+							.fname{ float: left;margin-right: 10px;color: #807513;background-color: #ddd;border-radius: 5px;font-weight: 600;height: 25px;overflow: hidden;width: 25px;text-align: center; }
+							.name1{ float: left; }
+							.date-time{ width: 50%;text-align: right; }
+							.mgb-10{ margin-bottom: 10px; }
+							.mgt-30{ margin-top: 30px; }
+							.icon path{ fill: #f59e0b; }
+							
+						</style>
+						<div class="boxReview">
+							<h2 style="text-transform: none;" class="title is-6">Bình luận</h2>
+							<div class="boxReview-comment-item mb-4"><div class="boxReview-comment-item-title is-flex is-justify-content-space-between is-align-items-center mgt-30"><div class="is-flex is-align-items-center"><p class="fname">
+							  V</p> <span class="name1">Vũ Tuấn Anh Khoa</span></div> <p class="date-time">10/6/2023 23:18</p></div> <div class="boxReview-comment-item-review my-2 p-2"><div class="item-review-rating is-flex is-align-items-center mgb-10"><strong>Đánh giá: </strong> <div class="is-flex"><div class="icon is-active"><svg height="15" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path d="M381.2 150.3L524.9 171.5C536.8 173.2 546.8 181.6 550.6 193.1C554.4 204.7 551.3 217.3 542.7 225.9L438.5 328.1L463.1 474.7C465.1 486.7 460.2 498.9 450.2 506C440.3 513.1 427.2 514 416.5 508.3L288.1 439.8L159.8 508.3C149 514 135.9 513.1 126 506C116.1 498.9 111.1 486.7 113.2 474.7L137.8 328.1L33.58 225.9C24.97 217.3 21.91 204.7 25.69 193.1C29.46 181.6 39.43 173.2 51.42 171.5L195 150.3L259.4 17.97C264.7 6.954 275.9-.0391 288.1-.0391C300.4-.0391 311.6 6.954 316.9 17.97L381.2 150.3z"></path></svg></div><div class="icon is-active"><svg height="15" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path d="M381.2 150.3L524.9 171.5C536.8 173.2 546.8 181.6 550.6 193.1C554.4 204.7 551.3 217.3 542.7 225.9L438.5 328.1L463.1 474.7C465.1 486.7 460.2 498.9 450.2 506C440.3 513.1 427.2 514 416.5 508.3L288.1 439.8L159.8 508.3C149 514 135.9 513.1 126 506C116.1 498.9 111.1 486.7 113.2 474.7L137.8 328.1L33.58 225.9C24.97 217.3 21.91 204.7 25.69 193.1C29.46 181.6 39.43 173.2 51.42 171.5L195 150.3L259.4 17.97C264.7 6.954 275.9-.0391 288.1-.0391C300.4-.0391 311.6 6.954 316.9 17.97L381.2 150.3z"></path></svg></div><div class="icon is-active"><svg height="15" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path d="M381.2 150.3L524.9 171.5C536.8 173.2 546.8 181.6 550.6 193.1C554.4 204.7 551.3 217.3 542.7 225.9L438.5 328.1L463.1 474.7C465.1 486.7 460.2 498.9 450.2 506C440.3 513.1 427.2 514 416.5 508.3L288.1 439.8L159.8 508.3C149 514 135.9 513.1 126 506C116.1 498.9 111.1 486.7 113.2 474.7L137.8 328.1L33.58 225.9C24.97 217.3 21.91 204.7 25.69 193.1C29.46 181.6 39.43 173.2 51.42 171.5L195 150.3L259.4 17.97C264.7 6.954 275.9-.0391 288.1-.0391C300.4-.0391 311.6 6.954 316.9 17.97L381.2 150.3z"></path></svg></div><div class="icon is-active"><svg height="15" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path d="M381.2 150.3L524.9 171.5C536.8 173.2 546.8 181.6 550.6 193.1C554.4 204.7 551.3 217.3 542.7 225.9L438.5 328.1L463.1 474.7C465.1 486.7 460.2 498.9 450.2 506C440.3 513.1 427.2 514 416.5 508.3L288.1 439.8L159.8 508.3C149 514 135.9 513.1 126 506C116.1 498.9 111.1 486.7 113.2 474.7L137.8 328.1L33.58 225.9C24.97 217.3 21.91 204.7 25.69 193.1C29.46 181.6 39.43 173.2 51.42 171.5L195 150.3L259.4 17.97C264.7 6.954 275.9-.0391 288.1-.0391C300.4-.0391 311.6 6.954 316.9 17.97L381.2 150.3z"></path></svg></div><div class="icon is-active"><svg height="15" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path d="M381.2 150.3L524.9 171.5C536.8 173.2 546.8 181.6 550.6 193.1C554.4 204.7 551.3 217.3 542.7 225.9L438.5 328.1L463.1 474.7C465.1 486.7 460.2 498.9 450.2 506C440.3 513.1 427.2 514 416.5 508.3L288.1 439.8L159.8 508.3C149 514 135.9 513.1 126 506C116.1 498.9 111.1 486.7 113.2 474.7L137.8 328.1L33.58 225.9C24.97 217.3 21.91 204.7 25.69 193.1C29.46 181.6 39.43 173.2 51.42 171.5L195 150.3L259.4 17.97C264.7 6.954 275.9-.0391 288.1-.0391C300.4-.0391 311.6 6.954 316.9 17.97L381.2 150.3z"></path></svg></div></div></div> <div class="item-review-comment my-1 is-flex is-justify-content-space-between is-flex-direction-column"><div class="comment-content"><p><strong>Nhận xét : </strong>
+								  Sản phẩm tốt, hiện tại chưa có vấn đề gì. Anh Thái Anh ở cửa hàng 126 kênh liêm, quảng ninh nhiệt tình, tư vấn tốt. Tôi rất hài lòng về chất lượng sản phẩm cũng như là dịch vụ của cửa hàng
+								</p></div> <div class="comment-image is-flex"></div></div></div> </div>
+						</div>-->
+					</div>
+
+				</div>
+				<style type="text/css">
+					/*.boxsizebar{ width: 100%;border:solid 1px #04245d;padding: 10px;border-bottom-right-radius: 5px;border-bottom-left-radius: 5px; }
+					.bvmn{ font-family: 'UTM Avo Bold',sans-serif;color: #fff;font-size: 21px;background: #04245d;padding: 5px 10px;margin: 35px 0 0 0px;border-top-right-radius: 5px;border-top-left-radius: 5px;text-align: center; }
+					.post-thumbnail img{ width: 100%!important;height: auto!important;border-radius: 5px; }
+					.post-excerpt p{ text-align: justify; }
+					.post-item a{ font-weight: bold;color: #04245d;font-family: 'UTM Avo Bold',sans-serif;font-size: 16px;margin-top: 5px;display: block;text-align: justify; }*/
+					.bvmn {
+						padding-top: 24px;
+						padding-bottom: 24px;
+					}
+
+					.post-item {
+						width: 100%;
+						clear: both;
+						display: block;
+						padding-top: 15px;
+						padding-bottom: 24px;
+						border-bottom: 1px solid #ced4da;
+						font-size: 11px;
+					}
+
+					/*.boxsizebar .post-item:nth-child(1){ padding-bottom: 5px; }*/
+					.post-thumbnail img {
+						width: 120px;
+						height: 80px;
+						float: left;
+						object-fit: cover;
+						border-radius: 4px;
+						overflow: hidden;
+						margin-right: 15px;
+					}
+
+					.post-item p a {
+						font-weight: bold;
+						font-family: 'UTM Avo Bold', sans-serif;
+						color: #000;
+						font-size: 12.9px;
+					}
+
+					.dashicons,
+					.dashicons-before:before {
+						font-size: 17px;
+					}
+				</style>
+				<div class="col-lg-4 col-md-4 col-sm-12">
+					<div class="bvmn">
+						Cẩm nang du lịch
+					</div>
+					<div class="boxsizebar">
+														<div class="post-item">
+																			<div class="post-thumbnail">
+											<a href="https://hoabinhtourist.com/cam-nang-du-lich/trekking-ta-xua">
+												<img width="150" height="150" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20150%20150'%3E%3C/svg%3E" class="attachment-thumbnail size-thumbnail wp-post-image" alt="trekking Tà Xùa" decoding="async" loading="lazy" data-lazy-srcset="https://cdn.hoabinhevents.com/hbt/wp-content/uploads/2025/10/24091627/trekking-Ta-xua-02-150x150.jpg 150w, https://cdn.hoabinhevents.com/hbt/wp-content/uploads/2025/10/24091627/trekking-Ta-xua-02-100x100.jpg 100w" data-lazy-sizes="(max-width: 150px) 100vw, 150px" data-lazy-src="https://cdn.hoabinhevents.com/hbt/wp-content/uploads/2025/10/24091627/trekking-Ta-xua-02-150x150.jpg"><noscript><img width="150" height="150" src="https://cdn.hoabinhevents.com/hbt/wp-content/uploads/2025/10/24091627/trekking-Ta-xua-02-150x150.jpg" class="attachment-thumbnail size-thumbnail wp-post-image" alt="trekking Tà Xùa" decoding="async" loading="lazy" srcset="https://cdn.hoabinhevents.com/hbt/wp-content/uploads/2025/10/24091627/trekking-Ta-xua-02-150x150.jpg 150w, https://cdn.hoabinhevents.com/hbt/wp-content/uploads/2025/10/24091627/trekking-Ta-xua-02-100x100.jpg 100w" sizes="(max-width: 150px) 100vw, 150px" /></noscript>											</a>
+										</div>
+																		<span class="dashicons dashicons-calendar"></span> 24/10/2025									<br>
+									<p><a href="https://hoabinhtourist.com/cam-nang-du-lich/trekking-ta-xua">Kinh nghiệm trekking Tà Xùa chinh phục đỉnh núi săn mây</a></p>
+								</div>
+														<div class="post-item">
+																			<div class="post-thumbnail">
+											<a href="https://hoabinhtourist.com/cam-nang-du-lich/trung-khanh-trung-quoc">
+												<img width="150" height="150" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20150%20150'%3E%3C/svg%3E" class="attachment-thumbnail size-thumbnail wp-post-image" alt="trùng khánh trung quốc" decoding="async" loading="lazy" data-lazy-srcset="https://cdn.hoabinhevents.com/hbt/wp-content/uploads/2025/10/21142204/trung-khanh-trung-quoc-14-150x150.jpg 150w, https://cdn.hoabinhevents.com/hbt/wp-content/uploads/2025/10/21142204/trung-khanh-trung-quoc-14-100x100.jpg 100w" data-lazy-sizes="(max-width: 150px) 100vw, 150px" data-lazy-src="https://cdn.hoabinhevents.com/hbt/wp-content/uploads/2025/10/21142204/trung-khanh-trung-quoc-14-150x150.jpg"><noscript><img width="150" height="150" src="https://cdn.hoabinhevents.com/hbt/wp-content/uploads/2025/10/21142204/trung-khanh-trung-quoc-14-150x150.jpg" class="attachment-thumbnail size-thumbnail wp-post-image" alt="trùng khánh trung quốc" decoding="async" loading="lazy" srcset="https://cdn.hoabinhevents.com/hbt/wp-content/uploads/2025/10/21142204/trung-khanh-trung-quoc-14-150x150.jpg 150w, https://cdn.hoabinhevents.com/hbt/wp-content/uploads/2025/10/21142204/trung-khanh-trung-quoc-14-100x100.jpg 100w" sizes="(max-width: 150px) 100vw, 150px" /></noscript>											</a>
+										</div>
+																		<span class="dashicons dashicons-calendar"></span> 21/10/2025									<br>
+									<p><a href="https://hoabinhtourist.com/cam-nang-du-lich/trung-khanh-trung-quoc">Kinh nghiệm du lịch Trùng Khánh Trung Quốc chi tiết A-Z</a></p>
+								</div>
+														<div class="post-item">
+																			<div class="post-thumbnail">
+											<a href="https://hoabinhtourist.com/cam-nang-du-lich/song-lung-khung-long-ta-xua">
+												<img width="150" height="150" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20150%20150'%3E%3C/svg%3E" class="attachment-thumbnail size-thumbnail wp-post-image" alt="Sống lưng khủng long Tà Xùa" decoding="async" loading="lazy" data-lazy-srcset="https://cdn.hoabinhevents.com/hbt/wp-content/uploads/2025/10/18085641/song-lung-khung-long-ta-xua-02-150x150.jpg 150w, https://cdn.hoabinhevents.com/hbt/wp-content/uploads/2025/10/18085641/song-lung-khung-long-ta-xua-02-100x100.jpg 100w" data-lazy-sizes="(max-width: 150px) 100vw, 150px" data-lazy-src="https://cdn.hoabinhevents.com/hbt/wp-content/uploads/2025/10/18085641/song-lung-khung-long-ta-xua-02-150x150.jpg"><noscript><img width="150" height="150" src="https://cdn.hoabinhevents.com/hbt/wp-content/uploads/2025/10/18085641/song-lung-khung-long-ta-xua-02-150x150.jpg" class="attachment-thumbnail size-thumbnail wp-post-image" alt="Sống lưng khủng long Tà Xùa" decoding="async" loading="lazy" srcset="https://cdn.hoabinhevents.com/hbt/wp-content/uploads/2025/10/18085641/song-lung-khung-long-ta-xua-02-150x150.jpg 150w, https://cdn.hoabinhevents.com/hbt/wp-content/uploads/2025/10/18085641/song-lung-khung-long-ta-xua-02-100x100.jpg 100w" sizes="(max-width: 150px) 100vw, 150px" /></noscript>											</a>
+										</div>
+																		<span class="dashicons dashicons-calendar"></span> 18/10/2025									<br>
+									<p><a href="https://hoabinhtourist.com/cam-nang-du-lich/song-lung-khung-long-ta-xua">Chinh phục sống lưng khủng long Tà Xùa hùng vĩ</a></p>
+								</div>
+														<div class="post-item">
+																			<div class="post-thumbnail">
+											<a href="https://hoabinhtourist.com/cam-nang-du-lich/homestay-ta-xua">
+												<img width="150" height="150" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20150%20150'%3E%3C/svg%3E" class="attachment-thumbnail size-thumbnail wp-post-image" alt="homestay Tà Xùa" decoding="async" loading="lazy" data-lazy-srcset="https://cdn.hoabinhevents.com/hbt/wp-content/uploads/2025/10/17115040/homestay-ta-xua-012-150x150.jpg 150w, https://cdn.hoabinhevents.com/hbt/wp-content/uploads/2025/10/17115040/homestay-ta-xua-012-100x100.jpg 100w" data-lazy-sizes="(max-width: 150px) 100vw, 150px" data-lazy-src="https://cdn.hoabinhevents.com/hbt/wp-content/uploads/2025/10/17115040/homestay-ta-xua-012-150x150.jpg"><noscript><img width="150" height="150" src="https://cdn.hoabinhevents.com/hbt/wp-content/uploads/2025/10/17115040/homestay-ta-xua-012-150x150.jpg" class="attachment-thumbnail size-thumbnail wp-post-image" alt="homestay Tà Xùa" decoding="async" loading="lazy" srcset="https://cdn.hoabinhevents.com/hbt/wp-content/uploads/2025/10/17115040/homestay-ta-xua-012-150x150.jpg 150w, https://cdn.hoabinhevents.com/hbt/wp-content/uploads/2025/10/17115040/homestay-ta-xua-012-100x100.jpg 100w" sizes="(max-width: 150px) 100vw, 150px" /></noscript>											</a>
+										</div>
+																		<span class="dashicons dashicons-calendar"></span> 17/10/2025									<br>
+									<p><a href="https://hoabinhtourist.com/cam-nang-du-lich/homestay-ta-xua">TOP 12+ homestay Tà Xùa view đẹp được đánh giá tốt</a></p>
+								</div>
+														<div class="post-item">
+																			<div class="post-thumbnail">
+											<a href="https://hoabinhtourist.com/cam-nang-du-lich/du-lich-ta-xua">
+												<img width="150" height="150" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20150%20150'%3E%3C/svg%3E" class="attachment-thumbnail size-thumbnail wp-post-image" alt="du lịch Tà Xùa" decoding="async" loading="lazy" data-lazy-srcset="https://cdn.hoabinhevents.com/hbt/wp-content/uploads/2025/10/17113817/ta-xua-02-150x150.jpg 150w, https://cdn.hoabinhevents.com/hbt/wp-content/uploads/2025/10/17113817/ta-xua-02-100x100.jpg 100w" data-lazy-sizes="(max-width: 150px) 100vw, 150px" data-lazy-src="https://cdn.hoabinhevents.com/hbt/wp-content/uploads/2025/10/17113817/ta-xua-02-150x150.jpg"><noscript><img width="150" height="150" src="https://cdn.hoabinhevents.com/hbt/wp-content/uploads/2025/10/17113817/ta-xua-02-150x150.jpg" class="attachment-thumbnail size-thumbnail wp-post-image" alt="du lịch Tà Xùa" decoding="async" loading="lazy" srcset="https://cdn.hoabinhevents.com/hbt/wp-content/uploads/2025/10/17113817/ta-xua-02-150x150.jpg 150w, https://cdn.hoabinhevents.com/hbt/wp-content/uploads/2025/10/17113817/ta-xua-02-100x100.jpg 100w" sizes="(max-width: 150px) 100vw, 150px" /></noscript>											</a>
+										</div>
+																		<span class="dashicons dashicons-calendar"></span> 17/10/2025									<br>
+									<p><a href="https://hoabinhtourist.com/cam-nang-du-lich/du-lich-ta-xua">Kinh nghiệm du lịch Tà Xùa săn mây cho người mới</a></p>
+								</div>
+														<div class="post-item">
+																			<div class="post-thumbnail">
+											<a href="https://hoabinhtourist.com/cam-nang-du-lich/dinh-gio-ta-xua">
+												<img width="150" height="150" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20150%20150'%3E%3C/svg%3E" class="attachment-thumbnail size-thumbnail wp-post-image" alt="Đỉnh gió Tà xùa" decoding="async" loading="lazy" data-lazy-srcset="https://cdn.hoabinhevents.com/hbt/wp-content/uploads/2025/10/15114622/dinh-gio-ta-xua-03-150x150.jpg 150w, https://cdn.hoabinhevents.com/hbt/wp-content/uploads/2025/10/15114622/dinh-gio-ta-xua-03-100x100.jpg 100w" data-lazy-sizes="(max-width: 150px) 100vw, 150px" data-lazy-src="https://cdn.hoabinhevents.com/hbt/wp-content/uploads/2025/10/15114622/dinh-gio-ta-xua-03-150x150.jpg"><noscript><img width="150" height="150" src="https://cdn.hoabinhevents.com/hbt/wp-content/uploads/2025/10/15114622/dinh-gio-ta-xua-03-150x150.jpg" class="attachment-thumbnail size-thumbnail wp-post-image" alt="Đỉnh gió Tà xùa" decoding="async" loading="lazy" srcset="https://cdn.hoabinhevents.com/hbt/wp-content/uploads/2025/10/15114622/dinh-gio-ta-xua-03-150x150.jpg 150w, https://cdn.hoabinhevents.com/hbt/wp-content/uploads/2025/10/15114622/dinh-gio-ta-xua-03-100x100.jpg 100w" sizes="(max-width: 150px) 100vw, 150px" /></noscript>											</a>
+										</div>
+																		<span class="dashicons dashicons-calendar"></span> 15/10/2025									<br>
+									<p><a href="https://hoabinhtourist.com/cam-nang-du-lich/dinh-gio-ta-xua">Đỉnh gió Tà Xùa – Kinh nghiệm săn mây tuyệt đẹp</a></p>
+								</div>
+														<div class="post-item">
+																			<div class="post-thumbnail">
+											<a href="https://hoabinhtourist.com/cam-nang-du-lich/dac-san-ta-xua">
+												<img width="150" height="150" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20150%20150'%3E%3C/svg%3E" class="attachment-thumbnail size-thumbnail wp-post-image" alt="đặc sản Tà Xùa" decoding="async" loading="lazy" data-lazy-srcset="https://cdn.hoabinhevents.com/hbt/wp-content/uploads/2025/10/15113815/dac-san-ta-xua-01-150x150.jpg 150w, https://cdn.hoabinhevents.com/hbt/wp-content/uploads/2025/10/15113815/dac-san-ta-xua-01-100x100.jpg 100w" data-lazy-sizes="(max-width: 150px) 100vw, 150px" data-lazy-src="https://cdn.hoabinhevents.com/hbt/wp-content/uploads/2025/10/15113815/dac-san-ta-xua-01-150x150.jpg"><noscript><img width="150" height="150" src="https://cdn.hoabinhevents.com/hbt/wp-content/uploads/2025/10/15113815/dac-san-ta-xua-01-150x150.jpg" class="attachment-thumbnail size-thumbnail wp-post-image" alt="đặc sản Tà Xùa" decoding="async" loading="lazy" srcset="https://cdn.hoabinhevents.com/hbt/wp-content/uploads/2025/10/15113815/dac-san-ta-xua-01-150x150.jpg 150w, https://cdn.hoabinhevents.com/hbt/wp-content/uploads/2025/10/15113815/dac-san-ta-xua-01-100x100.jpg 100w" sizes="(max-width: 150px) 100vw, 150px" /></noscript>											</a>
+										</div>
+																		<span class="dashicons dashicons-calendar"></span> 15/10/2025									<br>
+									<p><a href="https://hoabinhtourist.com/cam-nang-du-lich/dac-san-ta-xua">TOP 12+ món ăn đặc sản Tà Xùa du khách không nên bỏ qua</a></p>
+								</div>
+														<div class="post-item">
+																			<div class="post-thumbnail">
+											<a href="https://hoabinhtourist.com/cam-nang-du-lich/seongsan-ilchulbong-jeju">
+												<img width="150" height="150" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20150%20150'%3E%3C/svg%3E" class="attachment-thumbnail size-thumbnail wp-post-image" alt="seongsan ilchulbong" decoding="async" loading="lazy" data-lazy-srcset="https://cdn.hoabinhevents.com/hbt/wp-content/uploads/2025/10/11114105/seongsan-ilchulbong-jeju-2-150x150.jpg 150w, https://cdn.hoabinhevents.com/hbt/wp-content/uploads/2025/10/11114105/seongsan-ilchulbong-jeju-2-100x100.jpg 100w" data-lazy-sizes="(max-width: 150px) 100vw, 150px" data-lazy-src="https://cdn.hoabinhevents.com/hbt/wp-content/uploads/2025/10/11114105/seongsan-ilchulbong-jeju-2-150x150.jpg"><noscript><img width="150" height="150" src="https://cdn.hoabinhevents.com/hbt/wp-content/uploads/2025/10/11114105/seongsan-ilchulbong-jeju-2-150x150.jpg" class="attachment-thumbnail size-thumbnail wp-post-image" alt="seongsan ilchulbong" decoding="async" loading="lazy" srcset="https://cdn.hoabinhevents.com/hbt/wp-content/uploads/2025/10/11114105/seongsan-ilchulbong-jeju-2-150x150.jpg 150w, https://cdn.hoabinhevents.com/hbt/wp-content/uploads/2025/10/11114105/seongsan-ilchulbong-jeju-2-100x100.jpg 100w" sizes="(max-width: 150px) 100vw, 150px" /></noscript>											</a>
+										</div>
+																		<span class="dashicons dashicons-calendar"></span> 11/10/2025									<br>
+									<p><a href="https://hoabinhtourist.com/cam-nang-du-lich/seongsan-ilchulbong-jeju">Seongsan Ilchulbong: Đỉnh Bình Minh Jeju &amp; Trải Nghiệm Núi Lửa</a></p>
+								</div>
+														<div class="post-item">
+																			<div class="post-thumbnail">
+											<a href="https://hoabinhtourist.com/cam-nang-du-lich/chua-phat-ngoc-thuong-hai">
+												<img width="150" height="150" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20150%20150'%3E%3C/svg%3E" class="attachment-thumbnail size-thumbnail wp-post-image" alt="chùa phật ngọc thượng hải" decoding="async" loading="lazy" data-lazy-srcset="https://cdn.hoabinhevents.com/hbt/wp-content/uploads/2025/10/02113620/chua-phat-ngoc-thuong-hai-2-150x150.jpg 150w, https://cdn.hoabinhevents.com/hbt/wp-content/uploads/2025/10/02113620/chua-phat-ngoc-thuong-hai-2-100x100.jpg 100w" data-lazy-sizes="(max-width: 150px) 100vw, 150px" data-lazy-src="https://cdn.hoabinhevents.com/hbt/wp-content/uploads/2025/10/02113620/chua-phat-ngoc-thuong-hai-2-150x150.jpg"><noscript><img width="150" height="150" src="https://cdn.hoabinhevents.com/hbt/wp-content/uploads/2025/10/02113620/chua-phat-ngoc-thuong-hai-2-150x150.jpg" class="attachment-thumbnail size-thumbnail wp-post-image" alt="chùa phật ngọc thượng hải" decoding="async" loading="lazy" srcset="https://cdn.hoabinhevents.com/hbt/wp-content/uploads/2025/10/02113620/chua-phat-ngoc-thuong-hai-2-150x150.jpg 150w, https://cdn.hoabinhevents.com/hbt/wp-content/uploads/2025/10/02113620/chua-phat-ngoc-thuong-hai-2-100x100.jpg 100w" sizes="(max-width: 150px) 100vw, 150px" /></noscript>											</a>
+										</div>
+																		<span class="dashicons dashicons-calendar"></span> 02/10/2025									<br>
+									<p><a href="https://hoabinhtourist.com/cam-nang-du-lich/chua-phat-ngoc-thuong-hai">Khám phá chùa Phật ngọc Thượng Hải linh thiêng</a></p>
+								</div>
+														<div class="post-item">
+																			<div class="post-thumbnail">
+											<a href="https://hoabinhtourist.com/cam-nang-du-lich/di-jeju-co-can-visa-khong">
+												<img width="150" height="150" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20150%20150'%3E%3C/svg%3E" class="attachment-thumbnail size-thumbnail wp-post-image" alt="Đi Jeju có cần visa không" decoding="async" loading="lazy" data-lazy-srcset="https://cdn.hoabinhevents.com/hbt/wp-content/uploads/2025/10/02113107/di-jeju-co-can-visa-khong-03-150x150.jpg 150w, https://cdn.hoabinhevents.com/hbt/wp-content/uploads/2025/10/02113107/di-jeju-co-can-visa-khong-03-100x100.jpg 100w" data-lazy-sizes="(max-width: 150px) 100vw, 150px" data-lazy-src="https://cdn.hoabinhevents.com/hbt/wp-content/uploads/2025/10/02113107/di-jeju-co-can-visa-khong-03-150x150.jpg"><noscript><img width="150" height="150" src="https://cdn.hoabinhevents.com/hbt/wp-content/uploads/2025/10/02113107/di-jeju-co-can-visa-khong-03-150x150.jpg" class="attachment-thumbnail size-thumbnail wp-post-image" alt="Đi Jeju có cần visa không" decoding="async" loading="lazy" srcset="https://cdn.hoabinhevents.com/hbt/wp-content/uploads/2025/10/02113107/di-jeju-co-can-visa-khong-03-150x150.jpg 150w, https://cdn.hoabinhevents.com/hbt/wp-content/uploads/2025/10/02113107/di-jeju-co-can-visa-khong-03-100x100.jpg 100w" sizes="(max-width: 150px) 100vw, 150px" /></noscript>											</a>
+										</div>
+																		<span class="dashicons dashicons-calendar"></span> 02/10/2025									<br>
+									<p><a href="https://hoabinhtourist.com/cam-nang-du-lich/di-jeju-co-can-visa-khong">Đi Jeju có cần visa không? Cập nhật mới nhất</a></p>
+								</div>
+											</div>
+				</div>
+			</div>
+			<div class="container">
+				<!-- <div class="row">
+					  <a href="https://hoabinhtourist.com/du-lich-ha-long">
+						  <img class="resp1" style="max-width:100%;margin-top: 10px;border-radius: 10px;" alt="Tour Ông Hoàng Mười" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E" data-lazy-src="https://hoabinhtourist.com/images/tour ha long 1.png" /><noscript><img class="resp1" style="max-width:100%;margin-top: 10px;border-radius: 10px;" alt="Tour Ông Hoàng Mười" src="https://hoabinhtourist.com/images/tour ha long 1.png" /></noscript>
+						  <img class="resp2" style="max-width:100%;margin-top: 10px;border-radius: 10px;" alt="Tour Ông Hoàng Mười Mobi" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E" data-lazy-src="https://hoabinhtourist.com/images/tour ha long 1.png" /><noscript><img class="resp2" style="max-width:100%;margin-top: 10px;border-radius: 10px;" alt="Tour Ông Hoàng Mười Mobi" src="https://hoabinhtourist.com/images/tour ha long 1.png" /></noscript>
+						</a>
+					</div> -->
+			</div>
+		</div></main>
+	</div>
+</main>
+<script type="rocketlazyloadscript" data-rocket-type="text/javascript">
+	// Thời gian kết thúc đếm ngược (đặt theo định dạng YYYY-MM-DD hh:mm:ss)
+	const endTime = new Date("2023-09-30 00:00:00").getTime();
+	// Lấy ngày hiện tại
+	const currentDate = new Date();
+	// Mảng chứa tên các ngày trong tuần
+	const daysOfWeek = ["Chủ Nhật", "Thứ Hai", "Thứ Ba", "Thứ Tư", "Thứ Năm", "Thứ Sáu", "Thứ Bảy"];
+	const dayOfWeek = daysOfWeek[currentDate.getDay()];
+	// Định dạng ngày dương lịch thành dd/mm/yyyy
+	const formattedDate = `${currentDate.getDate()}/${currentDate.getMonth() + 1}/${currentDate.getFullYear()}`;
+
+	const days = currentDate.getDate();
+	const months = currentDate.getMonth() + 1;
+	const years = currentDate.getFullYear();
+	var datetime_lunar = convertSolar2Lunar(parseInt(days), parseInt(months), parseInt(years), parseInt(7.0));
+
+	var days_lunar = datetime_lunar[0];
+	if (parseInt(days_lunar) == 1) {
+		days_lunar = datetime_lunar[0] + '/' + datetime_lunar[1];
+	} else {
+		days_lunar = datetime_lunar[0] + '/' + datetime_lunar[1] + '/' + datetime_lunar[2];
+	}
+
+	// Hiển thị kết quả
+	document.getElementById("spthu").innerHTML = `${dayOfWeek}, ${formattedDate} (Dương lịch)`;
+	document.getElementById("spamlich").innerHTML = `${days_lunar}`;
+	/*document.getElementById("spthu").innerHTML = `
+	  <p>Ngày dương lịch: ${currentDate.toLocaleDateString()}</p>
+	  <p>Thứ trong tuần: ${dayOfWeek}</p>
+	  <p>Ngày âm lịch: ${lunarDate.lunarYear}/${lunarDate.lunarMonth}/${lunarDate.lunarDay}</p>
+	`;*/
+
+	// Cập nhật đếm ngược mỗi giây
+	const countdownInterval = setInterval(function() {
+		const now = new Date().getTime();
+		const timeLeft = endTime - now;
+
+		// Tính toán số ngày, giờ, phút và giây còn lại
+		const days = Math.floor(timeLeft / (1000 * 60 * 60 * 24));
+		const hours = Math.floor((timeLeft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+		const minutes = Math.floor((timeLeft % (1000 * 60 * 60)) / (1000 * 60));
+		const seconds = Math.floor((timeLeft % (1000 * 60)) / 1000);
+
+		document.getElementById("countdownday").innerHTML = `${days}`;
+		// Hiển thị kết quả trong phần tử có id "countdown"
+		document.getElementById("countdown").innerHTML = `
+		${hours} giờ, ${minutes} phút, ${seconds} giây
+	  `;
+
+		// Khi đến thời gian kết thúc, xóa interval và hiển thị thông báo
+		if (timeLeft <= 0) {
+			clearInterval(countdownInterval);
+			document.getElementById("countdown").innerHTML = "<p>Đếm ngược đã kết thúc!</p>";
+		}
+	}, 1000); // Mỗi giây (1000 ms)
+</script>
+<div class="title-louis-mobile text-center animated flipInX">
+  <img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E" alt="HoaBinh Group" class="img-responsive" data-lazy-src="https://cdn.hoabinhevents.com/main/reputation-mobile.jpg"><noscript><img src="https://cdn.hoabinhevents.com/main/reputation-mobile.jpg" alt="HoaBinh Group" class="img-responsive"></noscript>
+</div>
+<footer id="site-footer" class="footer" role="contentinfo">
+  <div class="footer__top">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-3 col-md-6 mb-30">
+          <div class="textwidget custom-html-widget">
+            <div class="footer__widget">
+              <div class="footer__logo">
+                                <a href="/">
+                  <img alt="Logo Hòa Bình Tourist" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E" data-lazy-src="https://cdn.hoabinhevents.com/hbt/wp-content/uploads/2024/11/01103643/cropped-1-3-8.png"><noscript><img alt="Logo Hòa Bình Tourist"
+                    src="https://cdn.hoabinhevents.com/hbt/wp-content/uploads/2024/11/01103643/cropped-1-3-8.png"></noscript>
+                </a>
+                <p><span>HoaBinh Tourist </span>
+                  là 1 trong những công ty lữ hành và cung cấp dịch vụ du lịch hàng đầu Việt Nam                </p>
+                <p><span>"CHẤT LƯỢNG TẠO DANH TIẾNG"</span>
+                  là phương châm hoạt động và cũng là thông điệp mà Hòa Bình Tourist muốn gửi tới quý khách hàng!
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 mb-30">
+          <div class="textwidget custom-html-widget">
+            <div class="footer__widget">
+              <div class="footer__title">
+                <p class="white-color mb-30">Quy định chính sách</p>
+              </div>
+              <div class="footer__menu">
+                <ul>
+                  <li><a rel="nofollow" href="/chinh-sach-thanh-toan">Chính sách thanh toán</a>
+                  </li>
+                  <li><a rel="nofollow" href="/chinh-sach-bao-hiem">Chính sách bảo hiểm</a></li>
+                  <li><a rel="nofollow" href="/chinh-sach-bao-mat">Chính sách bảo mật</a></li>
+                  <li><a rel="nofollow" href="/chinh-sach-giai-quyet-khieu-nai">Chính sách giải quyết khiếu nại</a>
+                  </li>
+                  <li><a rel="nofollow" href="/dieu-kien-va-dieu-khoan">Điều kiện và điều khoản</a></li>
+                  <li><a rel="nofollow" href="/quy-che-hoat-dong">Quy chế hoạt động</a></li>
+                  <li><a rel="nofollow" href="/tuyen-dung">Tuyển dụng</a></li>
+
+                </ul>
+                                <div class="social-icons">
+                  <a href="https://www.facebook.com/@dulichhoabinh" target="_blank" aria-label="Facebook">
+                    <i class="fab fa-facebook-f"></i>
+                  </a>
+                  <a rel="nofollow" href="https://www.youtube.com/channel/UCMTRQVNBpgYLqeWb1dsniEQ">
+                    <i class="fab fa-youtube"></i>
+                  </a>
+                  <!-- Thêm các mạng xã hội khác nếu cần -->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 mb-30">
+          <div class="textwidget custom-html-widget">
+            <div class="footer__widget">
+              <div class="footer__title">
+                <p class="white-color mb-30">Follow HoaBinh Tourist</p>
+              </div>
+              <div class="footer__insta">
+                                  <iframe loading="lazy" width="100%" height="130" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" data-rocket-lazyload="fitvidscompatible" data-lazy-src="https://www.facebook.com/plugins/page.php?href=https://www.facebook.com/dulichhoabinh&amp;tabs=timeline&amp;width=280&amp;height=130&amp;small_header=false&amp;adapt_container_width=true&amp;hide_cover=false&amp;show_facepile=true&amp;appId=1805692623064406" class="perfmatters-lazy" data-src="blank"></iframe><noscript><iframe loading="lazy"
+                    src="about:blank"
+                    width="100%" height="130" style="border:none;overflow:hidden" scrolling="no" frameborder="0"
+                    allowfullscreen="true"
+                    allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" data-rocket-lazyload="fitvidscompatible" data-lazy-src="https://www.facebook.com/plugins/page.php?href=https://www.facebook.com/dulichhoabinh&#038;tabs=timeline&#038;width=280&#038;height=130&#038;small_header=false&#038;adapt_container_width=true&#038;hide_cover=false&#038;show_facepile=true&#038;appId=1805692623064406"></iframe></noscript><noscript><iframe
+                    src="https://www.facebook.com/plugins/page.php?href=https://www.facebook.com/dulichhoabinh&tabs=timeline&width=280&height=130&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId=1805692623064406"
+                    width="100%" height="130" style="border:none;overflow:hidden" scrolling="no" frameborder="0"
+                    allowfullscreen="true"
+                    allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe></noscript>
+                              </div>
+            </div>
+          </div>
+          <style type="text/css">
+            .duns_1 {
+              float: left;
+              position: relative;
+              width: 100%;
+            }
+
+            .duns_2 {
+              position: absolute;
+              top: 115px;
+              right: -150px;
+              text-align: right;
+            }
+
+            .quality-make-reputation {
+              width: 100%;
+              text-align: center;
+              font-size: 30px;
+              color: var(--yellow-color);
+              font-weight: bold;
+              padding-top: 20px;
+            }
+
+            @media only screen and (min-width: 320px) and (max-width: 736px) {
+              .duns_2 {
+                position: absolute;
+                top: 225px;
+                right: -190px;
+                text-align: right;
+                z-index: 999999;
+              }
+
+              .logoSaleNoti {
+                height: 80px !important;
+              }
+
+              .quality-make-reputation {
+                font-size: 24px;
+              }
+            }
+          </style>
+        </div>
+        <div class="col-lg-3 col-md-6 mb-30">
+          <div class="textwidget">
+            <!-- <div class="footer--title">
+                  <h4 class="white-color mb-30">NHẬN ƯU ĐÃI</h4>
+                </div> -->
+            <div role="form" class="wpcf7" id="wpcf7-f166-o1" lang="en-US" dir="ltr">
+              <div class="screen-reader-response">
+                <p role="status" aria-live="polite" aria-atomic="true"></p>
+                <ul></ul>
+              </div>
+              <form action="#wpcf7-f166-o1" method="post" class="wpcf7-form init" novalidate="novalidate" data-status="init">
+                <ul class="address-contact" style="padding-left: 0px; line-height: 26px;">
+                  <li>Công ty TNHH ĐTTM và Du Lịch Quốc Tế Hòa Bình</li>
+
+                  <li>Business Registration Certificate No. 0102720141 issued by the Department of Planning and Investment of Hanoi City</li>
+
+                  <li>
+                    Đăng ký lần đầu ngày 14/04/2008. Đăng ký thay đổi lần thứ 8, ngày 22/01/2025                  </li>
+
+                  <li>Email: info@hoabinh-group.com | lan.pham@hoabinh-group.com <br> Tel: (+84) 939 311 911</li>
+                  <br>
+                </ul>
+                <a target="_blank" href="http://online.gov.vn/Home/WebDetails/93937" rel="nofollow">
+                  <img height="80" class="logoSaleNoti" alt="logoSaleNoti" title="" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%2080'%3E%3C/svg%3E" data-lazy-src="https://hoabinhtourist.com/public/images/logoSaleNoti.png"><noscript><img height="80" class="logoSaleNoti" alt="logoSaleNoti" title=""
+                    src="https://hoabinhtourist.com/public/images/logoSaleNoti.png"></noscript>
+                </a>
+                <!-- <div class="footer--social">
+                        <ul>
+                          <li>
+                            <a href="">
+                              <img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E" data-lazy-src="https://hoabinhtourist.com/wp-content/themes/louis/assets/build/library/images/icon 6.png" /><noscript><img src="https://hoabinhtourist.com/wp-content/themes/louis/assets/build/library/images/icon 6.png" /></noscript>
+                            </a>
+                          </li>
+                          <li>
+                            <a href="">
+                                <img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E" data-lazy-src="https://hoabinhtourist.com/wp-content/themes/louis/assets/build/library/images/icon 7.png" /><noscript><img src="https://hoabinhtourist.com/wp-content/themes/louis/assets/build/library/images/icon 7.png" /></noscript>
+                            </a>
+                          </li>
+                          <li>
+                            <a href="">
+                                <img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E" data-lazy-src="https://hoabinhtourist.com/wp-content/themes/louis/assets/build/library/images/icon 8.png" /><noscript><img src="https://hoabinhtourist.com/wp-content/themes/louis/assets/build/library/images/icon 8.png" /></noscript>
+                            </a>
+                          </li>
+                          <li>
+                            <a href="">
+                                <img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E" data-lazy-src="https://hoabinhtourist.com/wp-content/themes/louis/assets/build/library/images/icon 9.png" /><noscript><img src="https://hoabinhtourist.com/wp-content/themes/louis/assets/build/library/images/icon 9.png" /></noscript>
+                            </a>
+                          </li>
+                        </ul>
+                      </div> -->
+            </form></div>
+            <div class="wpcf7-response-output" aria-hidden="true"></div>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="quality-make-reputation">QUALITY MAKES REPUTATION!</div>
+
+    <div class="footer__middle footer__bottom--border">
+      <div class="container" style="width: 1400px;">
+        <hr>
+        <div class="border-page-footer">
+          <div class="row">
+            <div class="office-box col-md-3 npl col-first">
+              <h2 style="margin-bottom: 20px;">
+                <span class="hbg icon-hanoi"></span>
+              </h2>
+              <div class="f11a1">
+                <div class="at1">
+                  <span class="hbg icon-location"></span>29 Doan Thi Diem St., O Cho Dua Ward, Hanoi City
+                </div>
+                <div class="at1 three-phone">
+                  <span class="hbg icon-hbg-hotline"></span>
+                  <div class="three-phone-container">
+
+                    <a class="click2call" href="tel:+84913311911">(+84)913.311.911 </a> - <a class="click2call" href="tel:+84939311911">(+84)939.311.911</a>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+            <div class="office-box col-md-3">
+              <h2 style="margin-bottom: 20px;">
+                <span class="hbg icon-danang"></span>
+              </h2>
+              <div class="f11a1">
+                <div class="at1">
+                  <span class="hbg icon-location"></span>217 Tran Phu St., Hai Chau Ward, Da Nang City
+                </div>
+                <div class="at1">
+                  <span class="hbg icon-hbg-mail"></span>
+                  <a class="click2call" href="mailto:info@hoabinh-group.com">info@hoabinh-group.com</a>
+                </div>
+              </div>
+
+            </div>
+            <div class="office-box col-md-3">
+
+              <h2 style="margin-bottom: 20px;">
+                <span class="hbg icon-hcm"></span>
+              </h2>
+              <div class="f11a1">
+                <div class="at1">
+                  <span class="hbg icon-location"></span>05 Hoa Cau St., Cau Kieu Ward, Ho Chi Minh City
+                </div>
+                <div class="at1">
+                  <span class="hbg icon-hbg-web"></span>
+                  <a class="click2call" href="https://hoabinh-group.com">www.hoabinh-group.com</a>
+                </div>
+              </div>
+            </div>
+            <div class="office-box col-md-3 box-duns">
+              <div class="duns-section">
+                <iframe loading="lazy" width="150" data-rocket-lazyload="fitvidscompatible" data-lazy-src="https://hoabinh-group.com/duns.html" class="perfmatters-lazy" data-src="blank"></iframe><noscript><iframe loading="lazy" src="about:blank" width="150" data-rocket-lazyload="fitvidscompatible" data-lazy-src="https://hoabinh-group.com/duns.html"></iframe></noscript><noscript><iframe src="https://hoabinh-group.com/duns.html" width="150"></iframe></noscript>
+              </div>
+              <ul class="social-listing">
+                <li>
+                  <a target="_blank" href="https://profile.hoabinhtourist.com">
+                    <span title="Profile" class="hbg icon-company-profile"></span> Profile
+                  </a>
+                </li>
+
+              </ul>
+              <p class="chat-social">(+84) 913 311 911</p>
+            </div>
+          </div>
+
+        </div>
+        <hr>
+      </div>
+    </div>
+    <div class="footer__bottom footer__bottom--border">
+      <div class="container">
+        <div class="row">
+          <div class="col-xl-5 col-lg-6">
+            <div class="footer--copyright">
+              <p> Website được thiết kế bởi Hòa Bình Group - <a style="color:#fff!important;" class="sitemap" href="https://hoabinhtourist.com/sitemap_index.xml">Website sitemap</a></p>
+
+            </div>
+          </div>
+          <div class="col-xl-7 col-lg-6 d-none d-md-block">
+            <div class="footer--menu--two">
+              <div class="textwidget custom-html-widget">
+                <!-- Histats.com  (div with counter) -->
+                <div id="histats_counter"></div>
+                <!-- Histats.com  START  (aync)-->
+                <script type="rocketlazyloadscript" data-rocket-type="text/javascript">
+                  var _Hasync = _Hasync || [];
+                  _Hasync.push(['Histats.start', '1,4851298,4,8,210,40,00011111']);
+                  _Hasync.push(['Histats.fasi', '1']);
+                  _Hasync.push(['Histats.track_hits', '']);
+                  (function() {
+                    var hs = document.createElement('script');
+                    hs.type = 'text/javascript';
+                    hs.async = true;
+                    hs.src = ('//s10.histats.com/js15_as.js');
+                    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(
+                      hs);
+                  })();
+                </script>
+                <noscript><a href="/" target="_blank"><img src="//sstatic1.histats.com/0.gif?4851298&101" alt=""
+                      border="0"></a></noscript>
+                <!-- Histats.com  END  -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+</footer><!-- #site-footer -->
+
+<button id="backToTop" style="opacity: 0; visibility: hidden;">↑</button>
+
+		<div class="asp_hidden_data" id="asp_hidden_data" style="display: none !important;">
+			<svg style="position:absolute" height="0" width="0">
+				<filter id="aspblur">
+					<feGaussianBlur in="SourceGraphic" stdDeviation="4"></feGaussianBlur>
+				</filter>
+			</svg>
+			<svg style="position:absolute" height="0" width="0">
+				<filter id="no_aspblur"></filter>
+			</svg>
+		</div>
+		        <!--[if lte IE 9]>
+        <script>
+            'use strict';
+            (function($) {
+                $(document).ready(function() {
+                    $('#ftwp-container').addClass('ftwp-ie9');
+                });
+            })(jQuery);
+        </script>
+        <![endif]-->
+			<script type="rocketlazyloadscript" data-rocket-type="text/javascript">
+		(function () {
+			var c = document.body.className;
+			c = c.replace(/woocommerce-no-js/, 'woocommerce-js');
+			document.body.className = c;
+		})();
+	</script>
+	<script id="wc-add-to-cart-js-extra">
+var wc_add_to_cart_params = {"ajax_url":"\/wp-admin\/admin-ajax.php","wc_ajax_url":"\/?wc-ajax=%%endpoint%%","i18n_view_cart":"Xem gi\u1ecf h\u00e0ng","cart_url":"https:\/\/hoabinhtourist.com\/cart","is_cart":"","cart_redirect_after_add":"no"};
+</script>
+<script id="woocommerce-js-extra">
+var woocommerce_params = {"ajax_url":"\/wp-admin\/admin-ajax.php","wc_ajax_url":"\/?wc-ajax=%%endpoint%%"};
+</script>
+<script id="wc-cart-fragments-js-extra">
+var wc_cart_fragments_params = {"ajax_url":"\/wp-admin\/admin-ajax.php","wc_ajax_url":"\/?wc-ajax=%%endpoint%%","cart_hash_key":"wc_cart_hash_6f483e002d1a111d1392d9bc705b170a","fragment_name":"wc_fragments_6f483e002d1a111d1392d9bc705b170a","request_timeout":"5000"};
+</script>
+<script type="rocketlazyloadscript" src="https://hoabinhtourist.com/wp-content/themes/louis/assets/build/library/js/bootstrap.min.js?ver=3.3.7" id="bootstrap-js-js" defer=""></script>
+<script type="rocketlazyloadscript" src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js?ver=6.1.1" id="owl-carousel-js-js" defer=""></script>
+<script type="rocketlazyloadscript" src="https://hoabinhtourist.com/wp-content/themes/louis/assets/build/library/aos/aos.js?ver=6.1.1" id="aos-js-js" defer=""></script>
+<script type="rocketlazyloadscript" src="https://hoabinhtourist.com/wp-content/themes/louis/assets/build/library/js/script.js?ver=1761296546" id="script-js-js" defer=""></script>
+<script type="rocketlazyloadscript" src="https://hoabinhtourist.com/wp-content/themes/louis/assets/src/js/read-more.js" id="read-more-script-js" defer=""></script>
+<script type="rocketlazyloadscript" id="wd-asp-ajaxsearchpro-js-before">
+if ( typeof window.ASP == 'undefined') { window.ASP = {wp_rocket_exception: "DOMContentLoaded", ajaxurl: "https:\/\/hoabinhtourist.com\/wp-admin\/admin-ajax.php", backend_ajaxurl: "https:\/\/hoabinhtourist.com\/wp-admin\/admin-ajax.php", js_scope: "jQuery", asp_url: "https:\/\/hoabinhtourist.com\/wp-content\/plugins\/ajax-search-pro\/", upload_url: "https:\/\/hoabinhtourist.com\/wp-content\/uploads\/asp_upload\/", detect_ajax: 1, media_query: "Rc2xTQ", version: 5040, pageHTML: "", additional_scripts: [{"handle":"wd-asp-ajaxsearchpro","src":"https:\/\/hoabinhtourist.com\/wp-content\/plugins\/ajax-search-pro\/js\/min\/plugin\/optimized\/asp-prereq.js","prereq":[]},{"handle":"wd-asp-ajaxsearchpro-core","src":"https:\/\/hoabinhtourist.com\/wp-content\/plugins\/ajax-search-pro\/js\/min\/plugin\/optimized\/asp-core.js","prereq":[]},{"handle":"wd-asp-ajaxsearchpro-settings","src":"https:\/\/hoabinhtourist.com\/wp-content\/plugins\/ajax-search-pro\/js\/min\/plugin\/optimized\/asp-settings.js","prereq":["wd-asp-ajaxsearchpro"]},{"handle":"wd-asp-ajaxsearchpro-vertical","src":"https:\/\/hoabinhtourist.com\/wp-content\/plugins\/ajax-search-pro\/js\/min\/plugin\/optimized\/asp-results-vertical.js","prereq":["wd-asp-ajaxsearchpro"]},{"handle":"wd-asp-ajaxsearchpro-live","src":"https:\/\/hoabinhtourist.com\/wp-content\/plugins\/ajax-search-pro\/js\/min\/plugin\/optimized\/asp-live.js","prereq":["wd-asp-ajaxsearchpro"]},{"handle":"wd-asp-ajaxsearchpro-autocomplete","src":"https:\/\/hoabinhtourist.com\/wp-content\/plugins\/ajax-search-pro\/js\/min\/plugin\/optimized\/asp-autocomplete.js","prereq":["wd-asp-ajaxsearchpro"]},{"handle":"wd-asp-ajaxsearchpro-load","src":"https:\/\/hoabinhtourist.com\/wp-content\/plugins\/ajax-search-pro\/js\/min\/plugin\/optimized\/asp-load.js","prereq":["wd-asp-ajaxsearchpro-autocomplete"]}], script_async_load: false, font_url: "https:\/\/hoabinhtourist.com\/wp-content\/plugins\/ajax-search-pro\/css\/fonts\/icons\/icons2.woff2", init_only_in_viewport: true, highlight: {"enabled":false,"data":[]}, debug: false, instances: {}, analytics: {"method":0,"tracking_id":"","string":"?ajax_search={asp_term}","event":{"focus":{"active":1,"action":"focus","category":"ASP {search_id} | {search_name}","label":"Input focus","value":"1"},"search_start":{"active":0,"action":"search_start","category":"ASP {search_id} | {search_name}","label":"Phrase: {phrase}","value":"1"},"search_end":{"active":1,"action":"search_end","category":"ASP {search_id} | {search_name}","label":"{phrase} | {results_count}","value":"1"},"magnifier":{"active":1,"action":"magnifier","category":"ASP {search_id} | {search_name}","label":"Magnifier clicked","value":"1"},"return":{"active":1,"action":"return","category":"ASP {search_id} | {search_name}","label":"Return button pressed","value":"1"},"try_this":{"active":1,"action":"try_this","category":"ASP {search_id} | {search_name}","label":"Try this click | {phrase}","value":"1"},"facet_change":{"active":0,"action":"facet_change","category":"ASP {search_id} | {search_name}","label":"{option_label} | {option_value}","value":"1"},"result_click":{"active":1,"action":"result_click","category":"ASP {search_id} | {search_name}","label":"{result_title} | {result_url}","value":"1"}}}}};
+</script>
+<script type="rocketlazyloadscript" src="https://hoabinhtourist.com/wp-content/plugins/ajax-search-pro/js/min/plugin/optimized/asp-prereq.js?ver=Rc2xTQ" id="wd-asp-ajaxsearchpro-js" defer=""></script>
+<script type="rocketlazyloadscript" src="https://hoabinhtourist.com/wp-content/plugins/ajax-search-pro/js/min/plugin/optimized/asp-core.js?ver=Rc2xTQ" id="wd-asp-ajaxsearchpro-core-js" defer=""></script>
+<script type="rocketlazyloadscript" src="https://hoabinhtourist.com/wp-content/plugins/ajax-search-pro/js/min/plugin/optimized/asp-settings.js?ver=Rc2xTQ" id="wd-asp-ajaxsearchpro-settings-js" defer=""></script>
+<script type="rocketlazyloadscript" src="https://hoabinhtourist.com/wp-content/plugins/ajax-search-pro/js/min/plugin/optimized/asp-results-vertical.js?ver=Rc2xTQ" id="wd-asp-ajaxsearchpro-vertical-js" defer=""></script>
+<script type="rocketlazyloadscript" src="https://hoabinhtourist.com/wp-content/plugins/ajax-search-pro/js/min/plugin/optimized/asp-live.js?ver=Rc2xTQ" id="wd-asp-ajaxsearchpro-live-js" defer=""></script>
+<script type="rocketlazyloadscript" src="https://hoabinhtourist.com/wp-content/plugins/ajax-search-pro/js/min/plugin/optimized/asp-autocomplete.js?ver=Rc2xTQ" id="wd-asp-ajaxsearchpro-autocomplete-js" defer=""></script>
+<script type="rocketlazyloadscript" src="https://hoabinhtourist.com/wp-content/plugins/ajax-search-pro/js/min/plugin/optimized/asp-load.js?ver=Rc2xTQ" id="wd-asp-ajaxsearchpro-load-js" defer=""></script>
+<script type="rocketlazyloadscript" src="https://hoabinhtourist.com/wp-content/plugins/ajax-search-pro/js/min/plugin/optimized/asp-wrapper.js?ver=Rc2xTQ" id="wd-asp-ajaxsearchpro-wrapper-js" defer=""></script>
+<script id="perfmatters-lazy-load-js-before">
+window.lazyLoadOptions={elements_selector:"img[data-src],.perfmatters-lazy,.perfmatters-lazy-css-bg",thresholds:"0px 0px",class_loading:"pmloading",class_loaded:"pmloaded",callback_loaded:function(element){if(element.tagName==="IFRAME"){if(element.classList.contains("pmloaded")){if(typeof window.jQuery!="undefined"){if(jQuery.fn.fitVids){jQuery(element).parent().fitVids()}}}}}};window.addEventListener("LazyLoad::Initialized",function(e){var lazyLoadInstance=e.detail.instance;});
+</script>
+<script async="" src="https://hoabinhtourist.com/wp-content/plugins/perfmatters/js/lazyload.min.js?ver=2.0.0" id="perfmatters-lazy-load-js"></script>
+<script id="fixedtoc-js-js-extra">
+var fixedtocOption = {"showAdminbar":"","inOutEffect":"zoom","isNestedList":"1","isColExpList":"1","showColExpIcon":"1","isAccordionList":"","isQuickMin":"1","isEscMin":"1","isEnterMax":"1","fixedMenu":"","scrollOffset":"10","fixedOffsetX":"10","fixedOffsetY":"0","fixedPosition":"middle-right","contentsFixedHeight":"300","inPost":"1","contentsFloatInPost":"none","contentsWidthInPost":"250","contentsHeightInPost":"","contentsColexpInitMobile":"1","inWidget":"","fixedWidget":"","triggerBorder":"thin","contentsBorder":"medium","triggerSize":"46","isClickableHeader":"","debug":"0","postContentSelector":"#ftwp-postcontent","mobileMaxWidth":"768","disappearPoint":"content-bottom","smoothScroll":"1","scrollDuration":"500","fadeTriggerDuration":"5000","contentsColexpInit":"1"};
+</script>
+<script type="rocketlazyloadscript" src="https://hoabinhtourist.com/wp-content/plugins/fixed-toc/frontend/assets/js/ftoc.min.js?ver=3.1.25" id="fixedtoc-js-js" defer=""></script>
+<script type="rocketlazyloadscript" data-rocket-type="text/javascript">
+(function() {
+				var expirationDate = new Date();
+				expirationDate.setTime( expirationDate.getTime() + 31536000 * 1000 );
+				document.cookie = "pll_language=vi; expires=" + expirationDate.toUTCString() + "; path=/; secure; SameSite=Lax";
+			}());
+</script>
+<script>window.lazyLoadOptions=[{elements_selector:"img[data-lazy-src],.rocket-lazyload,iframe[data-lazy-src]",data_src:"lazy-src",data_srcset:"lazy-srcset",data_sizes:"lazy-sizes",class_loading:"lazyloading",class_loaded:"lazyloaded",threshold:300,callback_loaded:function(element){if(element.tagName==="IFRAME"&&element.dataset.rocketLazyload=="fitvidscompatible"){if(element.classList.contains("lazyloaded")){if(typeof window.jQuery!="undefined"){if(jQuery.fn.fitVids){jQuery(element).parent().fitVids()}}}}}},{elements_selector:".rocket-lazyload",data_src:"lazy-src",data_srcset:"lazy-srcset",data_sizes:"lazy-sizes",class_loading:"lazyloading",class_loaded:"lazyloaded",threshold:300,}];window.addEventListener('LazyLoad::Initialized',function(e){var lazyLoadInstance=e.detail.instance;if(window.MutationObserver){var observer=new MutationObserver(function(mutations){var image_count=0;var iframe_count=0;var rocketlazy_count=0;mutations.forEach(function(mutation){for(var i=0;i<mutation.addedNodes.length;i++){if(typeof mutation.addedNodes[i].getElementsByTagName!=='function'){continue}
+if(typeof mutation.addedNodes[i].getElementsByClassName!=='function'){continue}
+images=mutation.addedNodes[i].getElementsByTagName('img');is_image=mutation.addedNodes[i].tagName=="IMG";iframes=mutation.addedNodes[i].getElementsByTagName('iframe');is_iframe=mutation.addedNodes[i].tagName=="IFRAME";rocket_lazy=mutation.addedNodes[i].getElementsByClassName('rocket-lazyload');image_count+=images.length;iframe_count+=iframes.length;rocketlazy_count+=rocket_lazy.length;if(is_image){image_count+=1}
+if(is_iframe){iframe_count+=1}}});if(image_count>0||iframe_count>0||rocketlazy_count>0){lazyLoadInstance.update()}});var b=document.getElementsByTagName("body")[0];var config={childList:!0,subtree:!0};observer.observe(b,config)}},!1)</script><script data-no-minify="1" async="" src="https://hoabinhtourist.com/wp-content/plugins/wp-rocket/assets/js/lazyload/17.5/lazyload.min.js"></script>
+
+<script type="rocketlazyloadscript" id="sbinit" src="https://hoabinhclub.com/vendor/core/modules/chatsupport/js/min/main.min.js?lang=vi" defer=""></script>
+<script type="rocketlazyloadscript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js" integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A==" crossorigin="anonymous" referrerpolicy="no-referrer" defer=""></script>
+<script type="rocketlazyloadscript" data-rocket-type="text/javascript">window.addEventListener('DOMContentLoaded', function() {
+  $(document).ready(function() {
+    const backToTop = document.getElementById("backToTop");
+
+    window.addEventListener("scroll", () => {
+      if (window.scrollY > 200) {
+        backToTop.style.opacity = "1";
+        backToTop.style.visibility = "visible";
+      } else {
+        backToTop.style.opacity = "0";
+        backToTop.style.visibility = "hidden";
+      }
+    });
+
+    backToTop.addEventListener("click", () => {
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+      });
+    });
+    $("#slickslide1").slick({
+      dots: false,
+      infinite: true,
+      slidesToShow: 3,
+      slidesToScroll: 1,
+      autoplay: true,
+      autoplaySpeed: 2000,
+
+      pauseOnHover: true,
+
+      responsive: [
+
+        {
+          breakpoint: 700,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 2
+          }
+        },
+        {
+          breakpoint: 500,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1
+          }
+        }
+      ]
+    });
+    $("#slickslide2").slick({
+      dots: false,
+      infinite: true,
+      slidesToShow: 3,
+      slidesToScroll: 1,
+      autoplay: true,
+      autoplaySpeed: 2000,
+      pauseOnHover: true,
+
+      responsive: [
+
+        {
+          breakpoint: 700,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 2
+          }
+        },
+        {
+          breakpoint: 500,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1
+          }
+        }
+      ]
+    });
+    $("#slickslide_product").slick({
+      dots: false,
+      infinite: true,
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      autoplay: true,
+      autoplaySpeed: 2000,
+    });
+
+    setTimeout(function() {
+      $("#showpopup").css("position", "fixed");
+    }, 500);
+  });
+  jQuery(document).on("SBReady", function() {
+    SBChat.initChat();
+    jQuery(".sb-chat .sb-scroll-area .sb-header .sb-text").html("Hotline: 0939.311.911");
+    setTimeout(function() {
+      $(".sb-submit").text("Bắt đầu chat");
+      $(".sb-top").text("Nhập thông tin bên dưới");
+      $("#first_name").find("span").text("Tên của bạn");
+    }, 1000);
+
+  });
+});</script>
+<div style="width:100%;height: 80px;clear: both;background: #04245d;"></div>
+
+
+
+
+
+
+
+</body></html>
