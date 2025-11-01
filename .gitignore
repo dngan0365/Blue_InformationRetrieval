@@ -10,7 +10,7 @@ temp.tmp
 build/
 node_modules/
 .venv/
-
+Reference/
 # Ignore a directory's contents but not the directory itself
 my_folder/*
 
