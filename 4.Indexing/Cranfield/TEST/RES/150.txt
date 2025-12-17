@@ -1,0 +1,9 @@
+<<<<<<< HEAD:3.Indexing/Cranfield/TEST/RES/150.txt
+150 1074	3
+150 1075	3
+150 1062	-1
+=======
+150 1074	3
+150 1075	3
+150 1062	-1
+>>>>>>> c0f9df3a032b38a5eeeddca675b274ec25f80bfb:4.Indexing/Cranfield/TEST/RES/150.txt

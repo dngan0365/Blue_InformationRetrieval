@@ -1,0 +1,15 @@
+<<<<<<< HEAD:3.Indexing/Cranfield/TEST/RES/79.txt
+79 597	3
+79 598	3
+79 688	4
+79 708	4
+79 713	4
+79 544	-1
+=======
+79 597	3
+79 598	3
+79 688	4
+79 708	4
+79 713	4
+79 544	-1
+>>>>>>> c0f9df3a032b38a5eeeddca675b274ec25f80bfb:4.Indexing/Cranfield/TEST/RES/79.txt

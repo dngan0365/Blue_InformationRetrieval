@@ -1,0 +1,13 @@
+<<<<<<< HEAD:3.Indexing/Cranfield/TEST/RES/21.txt
+21 271	1
+21 16	2
+21 413	2
+21 414	3
+21 502	-1
+=======
+21 271	1
+21 16	2
+21 413	2
+21 414	3
+21 502	-1
+>>>>>>> c0f9df3a032b38a5eeeddca675b274ec25f80bfb:4.Indexing/Cranfield/TEST/RES/21.txt

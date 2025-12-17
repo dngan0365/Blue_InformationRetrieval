@@ -1,0 +1,13 @@
+<<<<<<< HEAD:3.Indexing/Cranfield/TEST/RES/139.txt
+139 1031	2
+139 1032	2
+139 1035	2
+139 1037	4
+139 953	-1
+=======
+139 1031	2
+139 1032	2
+139 1035	2
+139 1037	4
+139 953	-1
+>>>>>>> c0f9df3a032b38a5eeeddca675b274ec25f80bfb:4.Indexing/Cranfield/TEST/RES/139.txt

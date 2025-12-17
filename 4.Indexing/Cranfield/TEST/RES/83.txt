@@ -1,0 +1,13 @@
+<<<<<<< HEAD:3.Indexing/Cranfield/TEST/RES/83.txt
+83 680	2
+83 681	2
+83 682	2
+83 683	2
+83 633	-1
+=======
+83 680	2
+83 681	2
+83 682	2
+83 683	2
+83 633	-1
+>>>>>>> c0f9df3a032b38a5eeeddca675b274ec25f80bfb:4.Indexing/Cranfield/TEST/RES/83.txt

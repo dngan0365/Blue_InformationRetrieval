@@ -1,0 +1,9 @@
+<<<<<<< HEAD:3.Indexing/Cranfield/TEST/RES/117.txt
+117 360	2
+117 605	3
+117 896	-1
+=======
+117 360	2
+117 605	3
+117 896	-1
+>>>>>>> c0f9df3a032b38a5eeeddca675b274ec25f80bfb:4.Indexing/Cranfield/TEST/RES/117.txt

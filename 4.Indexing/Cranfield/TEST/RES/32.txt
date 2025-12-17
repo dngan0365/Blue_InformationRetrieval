@@ -1,0 +1,17 @@
+<<<<<<< HEAD:3.Indexing/Cranfield/TEST/RES/32.txt
+32 465	2
+32 249	3
+32 777	3
+32 778	3
+32 247	4
+32 250	4
+32 752	-1
+=======
+32 465	2
+32 249	3
+32 777	3
+32 778	3
+32 247	4
+32 250	4
+32 752	-1
+>>>>>>> c0f9df3a032b38a5eeeddca675b274ec25f80bfb:4.Indexing/Cranfield/TEST/RES/32.txt

@@ -1,0 +1,9 @@
+<<<<<<< HEAD:3.Indexing/Cranfield/TEST/RES/143.txt
+143 1043	1
+143 1044	1
+143 954	-1
+=======
+143 1043	1
+143 1044	1
+143 954	-1
+>>>>>>> c0f9df3a032b38a5eeeddca675b274ec25f80bfb:4.Indexing/Cranfield/TEST/RES/143.txt

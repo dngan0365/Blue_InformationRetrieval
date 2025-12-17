@@ -1,0 +1,13 @@
+<<<<<<< HEAD:3.Indexing/Cranfield/TEST/RES/223.txt
+223 400	3
+223 1387	3
+223 1392	3
+223 1398	3
+223 1396	-1
+=======
+223 400	3
+223 1387	3
+223 1392	3
+223 1398	3
+223 1396	-1
+>>>>>>> c0f9df3a032b38a5eeeddca675b274ec25f80bfb:4.Indexing/Cranfield/TEST/RES/223.txt

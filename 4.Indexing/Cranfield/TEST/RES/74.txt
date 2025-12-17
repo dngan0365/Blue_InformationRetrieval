@@ -1,0 +1,17 @@
+<<<<<<< HEAD:3.Indexing/Cranfield/TEST/RES/74.txt
+74 576	2
+74 656	2
+74 575	3
+74 317	4
+74 574	4
+74 578	4
+74 541	-1
+=======
+74 576	2
+74 656	2
+74 575	3
+74 317	4
+74 574	4
+74 578	4
+74 541	-1
+>>>>>>> c0f9df3a032b38a5eeeddca675b274ec25f80bfb:4.Indexing/Cranfield/TEST/RES/74.txt

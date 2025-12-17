@@ -1,0 +1,15 @@
+<<<<<<< HEAD:3.Indexing/Cranfield/TEST/RES/106.txt
+106 847	2
+106 846	3
+106 849	3
+106 844	4
+106 845	4
+106 764	-1
+=======
+106 847	2
+106 846	3
+106 849	3
+106 844	4
+106 845	4
+106 764	-1
+>>>>>>> c0f9df3a032b38a5eeeddca675b274ec25f80bfb:4.Indexing/Cranfield/TEST/RES/106.txt

@@ -1,0 +1,13 @@
+<<<<<<< HEAD:3.Indexing/Cranfield/TEST/RES/52.txt
+52 21	2
+52 22	2
+52 306	2
+52 326	4
+52 528	-1
+=======
+52 21	2
+52 22	2
+52 306	2
+52 326	4
+52 528	-1
+>>>>>>> c0f9df3a032b38a5eeeddca675b274ec25f80bfb:4.Indexing/Cranfield/TEST/RES/52.txt

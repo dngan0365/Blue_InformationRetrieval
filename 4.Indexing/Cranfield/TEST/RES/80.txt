@@ -1,0 +1,13 @@
+<<<<<<< HEAD:3.Indexing/Cranfield/TEST/RES/80.txt
+80 594	1
+80 597	1
+80 596	3
+80 598	3
+80 544	-1
+=======
+80 594	1
+80 597	1
+80 596	3
+80 598	3
+80 544	-1
+>>>>>>> c0f9df3a032b38a5eeeddca675b274ec25f80bfb:4.Indexing/Cranfield/TEST/RES/80.txt

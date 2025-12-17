@@ -1,0 +1,9 @@
+<<<<<<< HEAD:3.Indexing/Cranfield/TEST/RES/103.txt
+103 826	3
+103 828	3
+103 761	-1
+=======
+103 826	3
+103 828	3
+103 761	-1
+>>>>>>> c0f9df3a032b38a5eeeddca675b274ec25f80bfb:4.Indexing/Cranfield/TEST/RES/103.txt

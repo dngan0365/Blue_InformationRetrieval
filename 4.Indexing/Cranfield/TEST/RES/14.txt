@@ -1,0 +1,9 @@
+<<<<<<< HEAD:3.Indexing/Cranfield/TEST/RES/14.txt
+14 64	1
+14 65	4
+14 496	-1
+=======
+14 64	1
+14 65	4
+14 496	-1
+>>>>>>> c0f9df3a032b38a5eeeddca675b274ec25f80bfb:4.Indexing/Cranfield/TEST/RES/14.txt

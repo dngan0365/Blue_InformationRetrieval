@@ -1,0 +1,11 @@
+<<<<<<< HEAD:3.Indexing/Cranfield/TEST/RES/41.txt
+41 288	1
+41 289	1
+41 433	2
+41 520	-1
+=======
+41 288	1
+41 289	1
+41 433	2
+41 520	-1
+>>>>>>> c0f9df3a032b38a5eeeddca675b274ec25f80bfb:4.Indexing/Cranfield/TEST/RES/41.txt

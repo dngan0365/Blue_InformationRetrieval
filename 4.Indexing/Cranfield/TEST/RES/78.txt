@@ -1,0 +1,11 @@
+<<<<<<< HEAD:3.Indexing/Cranfield/TEST/RES/78.txt
+78 588	2
+78 589	3
+78 590	3
+78 543	-1
+=======
+78 588	2
+78 589	3
+78 590	3
+78 543	-1
+>>>>>>> c0f9df3a032b38a5eeeddca675b274ec25f80bfb:4.Indexing/Cranfield/TEST/RES/78.txt

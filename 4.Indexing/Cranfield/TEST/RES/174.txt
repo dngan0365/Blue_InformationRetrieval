@@ -1,0 +1,15 @@
+<<<<<<< HEAD:3.Indexing/Cranfield/TEST/RES/174.txt
+174 58	1
+174 411	1
+174 36	2
+174 423	4
+174 482	1
+174 533	-1
+=======
+174 58	1
+174 411	1
+174 36	2
+174 423	4
+174 482	1
+174 533	-1
+>>>>>>> c0f9df3a032b38a5eeeddca675b274ec25f80bfb:4.Indexing/Cranfield/TEST/RES/174.txt

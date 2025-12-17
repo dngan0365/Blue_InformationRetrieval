@@ -1,0 +1,11 @@
+<<<<<<< HEAD:3.Indexing/Cranfield/TEST/RES/118.txt
+118 923	2
+118 924	3
+118 925	3
+118 896	-1
+=======
+118 923	2
+118 924	3
+118 925	3
+118 896	-1
+>>>>>>> c0f9df3a032b38a5eeeddca675b274ec25f80bfb:4.Indexing/Cranfield/TEST/RES/118.txt

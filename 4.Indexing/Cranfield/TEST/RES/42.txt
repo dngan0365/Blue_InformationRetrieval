@@ -1,0 +1,15 @@
+<<<<<<< HEAD:3.Indexing/Cranfield/TEST/RES/42.txt
+42 468	2
+42 467	3
+42 469	3
+42 470	3
+42 775	4
+42 521	-1
+=======
+42 468	2
+42 467	3
+42 469	3
+42 470	3
+42 775	4
+42 521	-1
+>>>>>>> c0f9df3a032b38a5eeeddca675b274ec25f80bfb:4.Indexing/Cranfield/TEST/RES/42.txt

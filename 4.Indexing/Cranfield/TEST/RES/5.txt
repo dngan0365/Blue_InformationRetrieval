@@ -1,0 +1,13 @@
+<<<<<<< HEAD:3.Indexing/Cranfield/TEST/RES/5.txt
+5 552	1
+5 401	3
+5 1297	3
+5 1296	1
+5 488	-1
+=======
+5 552	1
+5 401	3
+5 1297	3
+5 1296	1
+5 488	-1
+>>>>>>> c0f9df3a032b38a5eeeddca675b274ec25f80bfb:4.Indexing/Cranfield/TEST/RES/5.txt

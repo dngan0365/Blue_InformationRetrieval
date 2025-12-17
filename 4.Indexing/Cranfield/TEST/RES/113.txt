@@ -1,0 +1,13 @@
+<<<<<<< HEAD:3.Indexing/Cranfield/TEST/RES/113.txt
+113 746	3
+113 748	3
+113 749	3
+113 265	3
+113 643	-1
+=======
+113 746	3
+113 748	3
+113 749	3
+113 265	3
+113 643	-1
+>>>>>>> c0f9df3a032b38a5eeeddca675b274ec25f80bfb:4.Indexing/Cranfield/TEST/RES/113.txt

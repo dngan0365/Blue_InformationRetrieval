@@ -1,0 +1,13 @@
+<<<<<<< HEAD:3.Indexing/Cranfield/TEST/RES/124.txt
+124 967	2
+124 968	2
+124 964	3
+124 965	3
+124 941	-1
+=======
+124 967	2
+124 968	2
+124 964	3
+124 965	3
+124 941	-1
+>>>>>>> c0f9df3a032b38a5eeeddca675b274ec25f80bfb:4.Indexing/Cranfield/TEST/RES/124.txt

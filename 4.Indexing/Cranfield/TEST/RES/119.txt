@@ -1,0 +1,7 @@
+<<<<<<< HEAD:3.Indexing/Cranfield/TEST/RES/119.txt
+119 926	4
+119 897	-1
+=======
+119 926	4
+119 897	-1
+>>>>>>> c0f9df3a032b38a5eeeddca675b274ec25f80bfb:4.Indexing/Cranfield/TEST/RES/119.txt

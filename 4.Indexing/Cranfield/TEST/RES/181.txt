@@ -1,0 +1,15 @@
+<<<<<<< HEAD:3.Indexing/Cranfield/TEST/RES/181.txt
+181 973	2
+181 974	2
+181 409	2
+181 997	3
+181 1061	3
+181 942	-1
+=======
+181 973	2
+181 974	2
+181 409	2
+181 997	3
+181 1061	3
+181 942	-1
+>>>>>>> c0f9df3a032b38a5eeeddca675b274ec25f80bfb:4.Indexing/Cranfield/TEST/RES/181.txt
