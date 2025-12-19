@@ -1,9 +1,0 @@
-<<<<<<< HEAD:3.Indexing/Cranfield/TEST/RES/138.txt
-138 846	1
-138 1036	1
-138 953	-1
-=======
-138 846	1
-138 1036	1
-138 953	-1
->>>>>>> c0f9df3a032b38a5eeeddca675b274ec25f80bfb:4.Indexing/Cranfield/TEST/RES/138.txt

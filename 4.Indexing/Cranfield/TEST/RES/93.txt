@@ -1,7 +1,0 @@
-<<<<<<< HEAD:3.Indexing/Cranfield/TEST/RES/93.txt
-93 691	3
-93 635	-1
-=======
-93 691	3
-93 635	-1
->>>>>>> c0f9df3a032b38a5eeeddca675b274ec25f80bfb:4.Indexing/Cranfield/TEST/RES/93.txt

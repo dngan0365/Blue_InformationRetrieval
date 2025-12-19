@@ -1,7 +1,0 @@
-<<<<<<< HEAD:3.Indexing/Cranfield/TEST/RES/22.txt
-22 68	1
-22 502	-1
-=======
-22 68	1
-22 502	-1
->>>>>>> c0f9df3a032b38a5eeeddca675b274ec25f80bfb:4.Indexing/Cranfield/TEST/RES/22.txt

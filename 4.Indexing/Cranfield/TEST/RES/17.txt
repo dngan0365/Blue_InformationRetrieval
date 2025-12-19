@@ -1,9 +1,0 @@
-<<<<<<< HEAD:3.Indexing/Cranfield/TEST/RES/17.txt
-17 106	2
-17 196	3
-17 498	-1
-=======
-17 106	2
-17 196	3
-17 498	-1
->>>>>>> c0f9df3a032b38a5eeeddca675b274ec25f80bfb:4.Indexing/Cranfield/TEST/RES/17.txt
