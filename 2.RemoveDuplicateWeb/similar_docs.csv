@@ -12,6 +12,7 @@ Document 1,Document 2,Similarity
 130.txt,263.txt,0.664
 142.txt,340.txt,0.531
 151.txt,310.txt,1.0
+151.txt,496.txt,0.969
 155.txt,239.txt,1.0
 157.txt,241.txt,1.0
 158.txt,243.txt,0.945
@@ -457,6 +458,7 @@ Document 1,Document 2,Similarity
 305.txt,419.txt,0.828
 305.txt,475.txt,0.781
 305.txt,477.txt,0.789
+310.txt,496.txt,0.969
 311.txt,315.txt,0.805
 311.txt,332.txt,0.844
 311.txt,336.txt,0.82
